@@ -366,7 +366,7 @@ section{padding:96px 0}
 <header class="header" id="header">
   <div class="header-inner">
     <a class="logo" href="#top">
-      <img src="images/logo.png" data-ph="logo" alt="ウェルモビリティRV" style="display:none">
+      <img src="images/logo.jpg" data-ph="logo" alt="ウェルモビリティRV" style="display:none">
       <span class="logo-text">ウェルモビリティRV<small>WEL MOBILITY RV</small></span>
     </a>
     <nav class="header-nav">
@@ -384,7 +384,7 @@ section{padding:96px 0}
 
 <!-- ===== 1. ファーストビュー ===== -->
 <section class="fv" id="top">
-  <img class="fv-bg" src="images/fv_main.jpg" data-ph="fv" alt="夕暮れのビーチでハッチバックを開けてくつろぐ家族">
+  <img class="fv-bg" src="images/fv_main.png" data-ph="fv" alt="夕暮れのビーチでハッチバックを開けてくつろぐ家族">
   <div class="fv-inner">
     <span class="fv-badge reveal">月々4万円〜ではじめるバンライフ</span>
     <h1 class="reveal">街乗り、<br>ときどき<span class="accent">秘密基地。</span></h1>
@@ -441,7 +441,7 @@ section{padding:96px 0}
     <p class="sec-lead reveal">「日常」と「非日常」を、この一台で。</p>
 
     <div class="sol-block">
-      <div class="sol-media reveal"><img src="images/solution_daily.jpg" data-ph="sol1" alt="富士山が見える街中を走る白いハイエース"></div>
+      <div class="sol-media reveal"><img src="images/solution_daily.png" data-ph="sol1" alt="富士山が見える街中を走る白いハイエース"></div>
       <div class="sol-text reveal">
         <div class="sol-num">POINT 01</div>
         <h3>1台2役<br>「普段は5人乗り ⇄ 週末は秘密基地」</h3>
@@ -450,7 +450,7 @@ section{padding:96px 0}
     </div>
 
     <div class="sol-block is-flip">
-      <div class="sol-media reveal"><img src="images/solution_interior.jpg" data-ph="sol2" alt="ベッドキットを展開した車内"></div>
+      <div class="sol-media reveal"><img src="images/solution_interior.png" data-ph="sol2" alt="ベッドキットを展開した車内"></div>
       <div class="sol-text reveal">
         <div class="sol-num">POINT 02</div>
         <h3>月々4万円〜<br>手が届く残価設定プラン</h3>
@@ -487,7 +487,7 @@ section{padding:96px 0}
         </div>
       </div>
       <div class="reason-card reveal">
-        <img src="images/reason_02.jpg" data-ph="r2" alt="ベッドキットでくつろぐ家族">
+        <img src="images/reason_02.png" data-ph="r2" alt="ベッドキットでくつろぐ家族">
         <div class="reason-body">
           <div class="reason-num">REASON 02</div>
           <h3>賢く浮かせる宿代</h3>
@@ -547,14 +547,14 @@ section{padding:96px 0}
     <h2 class="sec-title reveal">オーナー様のリアルな声</h2>
     <div class="voice-grid">
       <div class="voice-card reveal">
-        <img src="images/voice_01.jpg" data-ph="v1" alt="オーナー様ご家族">
+        <img src="images/voice_01.png" data-ph="v1" alt="オーナー様ご家族">
         <span class="voice-label">OWNER'S VOICE 01</span>
         <h3>「金曜夜の出発が、家族の恒例行事になりました」</h3>
         <p>金曜の夜に出て、疲れたらSAで寝る。そんな自由が手に入りました。子供たちも『動く秘密基地』に大興奮！</p>
         <div class="voice-meta">― 40代男性（会社員・妻＋子ども2人）</div>
       </div>
       <div class="voice-card reveal">
-        <img src="images/voice_02.jpg" data-ph="v2" alt="オーナー様と愛車">
+        <img src="images/voice_02.png" data-ph="v2" alt="オーナー様と愛車">
         <span class="voice-label">OWNER'S VOICE 02</span>
         <h3>「見た目がかっこいいので、平日の通勤もテンションが上がります」</h3>
         <p>ミニバンから買い替えて本当に大正解でした。立体駐車場にも入るので、普段の買い物も全く不便がありません。</p>
@@ -654,16 +654,16 @@ section{padding:96px 0}
 // 画像が未設置の間は、仮画像（ファイル名＋推奨サイズ入り）を自動表示します。
 // images/ フォルダに下記ファイル名で写真を入れるだけで自動的に差し替わります。
 const PLACEHOLDERS = {
-  logo:  {file:'logo.png',            size:'400×100px（透過PNG）'},
-  fv:    {file:'fv_main.jpg',         size:'1920×1280px', label:'メインビジュアル：夕暮れのビーチで%0Aハッチバックを開けてくつろぐ家族'},
-  sol1:  {file:'solution_daily.jpg',  size:'1200×800px',  label:'富士山が見える街中を走る白いハイエース'},
-  sol2:  {file:'solution_interior.jpg',size:'1200×800px', label:'ベッドキットを展開した車内'},
+  logo:  {file:'logo.jpg',            size:'400×100px'},
+  fv:    {file:'fv_main.png',         size:'1920×1280px', label:'メインビジュアル：夕暮れのビーチで%0Aハッチバックを開けてくつろぐ家族'},
+  sol1:  {file:'solution_daily.png',  size:'1200×800px',  label:'富士山が見える街中を走る白いハイエース'},
+  sol2:  {file:'solution_interior.png',size:'1200×800px', label:'ベッドキットを展開した車内'},
   r1:    {file:'reason_01.jpg',       size:'900×600px',   label:'駐車場・街中をスムーズに走行するシーン'},
-  r2:    {file:'reason_02.jpg',       size:'900×600px',   label:'ベッドキットに家族が横になっている車内'},
+  r2:    {file:'reason_02.png',       size:'900×600px',   label:'ベッドキットに家族が横になっている車内'},
   r3:    {file:'reason_03.jpg',       size:'900×600px',   label:'アースカラーの外観＆ウッド調内装'},
   brand: {file:'brand_story.jpg',     size:'800×800px',   label:'キャンプ場での家族の団らん'},
-  v1:    {file:'voice_01.jpg',        size:'900×600px',   label:'オーナー様ご家族の写真'},
-  v2:    {file:'voice_02.jpg',        size:'900×600px',   label:'オーナー様と愛車の写真'},
+  v1:    {file:'voice_01.png',        size:'900×600px',   label:'オーナー様ご家族の写真'},
+  v2:    {file:'voice_02.png',        size:'900×600px',   label:'オーナー様と愛車の写真'},
   final: {file:'final_bg.jpg',        size:'1920×1080px', label:'星空とキャンピングカー'}
 };
 function phSvg(p){
@@ -683,15 +683,22 @@ document.querySelectorAll('img[data-ph]').forEach(img=>{
   const p = PLACEHOLDERS[img.dataset.ph];
   if(!p) return;
   const isLogo = img.dataset.ph==='logo';
-  const fallback = ()=>{ if(isLogo){ img.style.display='none'; } else { img.src = phSvg(p); } };
+  // 拡張子が違っても自動で探す（.jpg → .png → .webp → .jpeg の順に試行）
+  const base = 'images/' + p.file.replace(/\.[^.]+$/,'');
+  const queue = ['.jpg','.png','.webp','.jpeg'].map(e=>base+e)
+    .filter(s=>!img.getAttribute('src').endsWith(s));
+  const fallback = ()=>{
+    if(queue.length){ img.src = queue.shift(); }
+    else if(isLogo){ img.style.display='none'; }
+    else { img.src = phSvg(p); }
+  };
   const showLogo = ()=>{ img.style.display='block'; img.nextElementSibling.style.display='none'; };
+  img.addEventListener('error',fallback);
+  if(isLogo) img.addEventListener('load',showLogo);
   // スクリプト読込前に読み込み失敗している場合にも対応
   if(img.complete){
     if(img.naturalWidth===0){ fallback(); }
     else if(isLogo){ showLogo(); }
-  }else{
-    img.addEventListener('error',fallback,{once:true});
-    if(isLogo) img.addEventListener('load',showLogo,{once:true});
   }
 });
 
