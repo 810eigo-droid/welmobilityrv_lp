@@ -47,6 +47,23 @@ img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 .inner{max-width:1080px;margin:0 auto;padding:0 24px}
 
+/* ===== 見出しフォント比較用スイッチ（サンプル限定・納品時に削除するブロック） ===== */
+body.font-gothic{--font-round:'Noto Sans JP',"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+.font-switch{
+  position:fixed;left:14px;bottom:14px;z-index:9992;
+  background:rgba(255,255,255,.95);border:1px solid rgba(27,67,50,.18);
+  border-radius:999px;padding:6px 8px;box-shadow:0 6px 20px rgba(27,67,50,.18);
+  display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--ink-soft);
+}
+.font-switch span{padding-left:6px;letter-spacing:.05em}
+.font-switch button{
+  border:none;cursor:pointer;font-family:inherit;font-size:11px;font-weight:700;
+  padding:6px 12px;border-radius:999px;background:transparent;color:var(--ink-soft);
+}
+.font-switch button.is-active{background:var(--green-900);color:#fff}
+@media(max-width:820px){.font-switch{bottom:76px}}
+/* ===== /フォント切替 ===== */
+
 /* ===== SAMPLE watermark（納品時に削除するブロック） ===== */
 .wm-tile{
   position:fixed;inset:0;z-index:9990;pointer-events:none;
@@ -369,6 +386,14 @@ section{padding:96px 0}
 <div class="wm-tile" aria-hidden="true"></div>
 <div class="wm-badge">SAMPLE ─ TAF-Design</div>
 <!-- ===== /SAMPLE表示 ===== -->
+
+<!-- ===== 見出しフォント比較用スイッチ（サンプル限定・納品時に削除） ===== -->
+<div class="font-switch">
+  <span>見出し</span>
+  <button type="button" id="fontRound" class="is-active">丸ゴシック</button>
+  <button type="button" id="fontGothic">ゴシック</button>
+</div>
+<!-- ===== /フォント切替 ===== -->
 
 <header class="header" id="header">
   <div class="header-inner">
@@ -724,6 +749,19 @@ window.addEventListener('scroll',()=>{
   fixedCta.classList.toggle('is-hidden', window.scrollY < fv.offsetHeight*0.6);
 },{passive:true});
 fixedCta.classList.add('is-hidden');
+
+// 見出しフォント切替（サンプル限定・納品時に削除するブロック）
+// URLに ?font=gothic を付けるとゴシック版で開けます
+const btnRound = document.getElementById('fontRound');
+const btnGothic = document.getElementById('fontGothic');
+function setFont(gothic){
+  document.body.classList.toggle('font-gothic', gothic);
+  btnRound.classList.toggle('is-active', !gothic);
+  btnGothic.classList.toggle('is-active', gothic);
+}
+btnRound.addEventListener('click',()=>setFont(false));
+btnGothic.addEventListener('click',()=>setFont(true));
+if(new URLSearchParams(location.search).get('font')==='gothic') setFont(true);
 </script>
 </body>
 </html>
