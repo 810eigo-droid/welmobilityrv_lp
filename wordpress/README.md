@@ -6,10 +6,12 @@
 ## 組み込み手順
 
 ### 1. 画像のアップロード
-`images/` フォルダの全画像をWordPressの「メディア」にアップロードします。
-アップロード後、**各ブロック内の `images/〜` をメディアのURLに置き換え**てください。
-（例：`images/fv_main.png` → `https://ドメイン/wp-content/uploads/2026/08/fv_main.png`）
-※FTPが使える場合は、サイト直下に `images/` フォルダごと置けば置換不要です（固定ページがルート表示の場合のみ）。
+全画像（WebP形式・14枚）を `https://welmobilityrv.com/wp-content/uploads/` 直下に、サンプルと同じファイル名で配置します。
+ブロック内の画像URLはすべてこの場所を指すように記述済みのため、**URL置換の作業は不要**です。
+
+必要ファイル：logo / fv_main / worry_01〜03 / solution_daily / solution_interior / reason_01〜03 / brand_story / voice_01 / voice_02 / final_bg（すべて `.webp`）
+
+※メディアライブラリからアップすると通常 `uploads/2026/08/` のような年月フォルダに入ります。uploads直下にするには「設定 → メディア →『アップロードしたファイルを年月ベースのフォルダに整理』のチェックを外してからアップ」するか、FTPでuploads直下に直接置いてください。年月フォルダのまま運用する場合は、各ブロック内のURLに年月部分を一括追記します。
 
 ### 2. 共通CSSの登録
 「外観 → カスタマイズ → 追加CSS」に `00_共通CSS.css` の中身を丸ごと貼り付けます。
