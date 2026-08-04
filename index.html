@@ -170,20 +170,49 @@ section{padding:96px 0}
 
 /* ---------- 悩み ---------- */
 .worry{background:var(--white)}
-.worry-list{display:flex;flex-direction:column;gap:20px;max-width:760px;margin:0 auto}
-.worry-item{
-  background:var(--bg);border:1px solid rgba(27,67,50,.08);
-  border-radius:var(--radius);padding:26px 30px;
-  display:flex;gap:18px;align-items:flex-start;
+.bubble-list{display:flex;flex-direction:column;gap:26px;max-width:680px;margin:0 auto}
+.bubble-row{display:flex;gap:18px;align-items:flex-start}
+.bubble-row.is-right{flex-direction:row-reverse}
+.bubble-face{
+  flex-shrink:0;width:82px;height:82px;border-radius:50%;object-fit:cover;
+  border:3px solid var(--green-050);box-shadow:0 4px 14px rgba(27,67,50,.12);
 }
-.worry-icon{
-  flex-shrink:0;width:44px;height:44px;border-radius:50%;
-  background:var(--accent-pale);color:var(--accent-deep);
-  display:flex;align-items:center;justify-content:center;
-  font-weight:900;font-size:20px;font-family:var(--font-round);
+.bubble{
+  position:relative;background:var(--bg);border:1px solid rgba(27,67,50,.10);
+  border-radius:16px;padding:18px 24px;
+  font-size:15.5px;font-weight:700;color:var(--green-900);line-height:1.8;
+  align-self:center;
 }
-.worry-item h3{font-size:16.5px;font-weight:700;color:var(--green-900);margin-bottom:6px;line-height:1.6}
-.worry-item p{font-size:14px;color:var(--ink-soft)}
+.bubble::before{
+  content:"";position:absolute;top:26px;left:-9px;
+  width:16px;height:16px;background:var(--bg);
+  border-left:1px solid rgba(27,67,50,.10);border-bottom:1px solid rgba(27,67,50,.10);
+  transform:rotate(45deg);
+}
+.bubble-row.is-right .bubble::before{
+  left:auto;right:-9px;transform:rotate(225deg);
+}
+.check-card{
+  max-width:640px;margin:44px auto 0;background:var(--bg);
+  border:1px solid rgba(27,67,50,.10);border-radius:var(--radius);
+  padding:30px 36px;
+}
+.check-card ul{list-style:none}
+.check-card li{
+  position:relative;padding:9px 0 9px 36px;
+  font-size:15px;font-weight:700;color:var(--ink);line-height:1.7;
+}
+.check-card li::before{
+  content:"✓";position:absolute;left:0;top:11px;
+  width:23px;height:23px;border-radius:6px;
+  background:var(--green-500);color:#fff;
+  font-size:14px;font-weight:900;text-align:center;line-height:23px;
+}
+@media(max-width:600px){
+  .bubble-face{width:64px;height:64px}
+  .bubble{font-size:14px;padding:15px 18px}
+  .check-card{padding:24px 22px}
+}
 .worry-close{
   margin-top:52px;text-align:center;font-family:var(--font-round);
   font-size:clamp(18px,2.6vw,24px);font-weight:900;color:var(--green-700);
@@ -435,33 +464,32 @@ section{padding:96px 0}
 <!-- ===== 2. 共感（お悩み） ===== -->
 <section class="worry">
   <div class="inner">
-    <span class="sec-label reveal">CHECK</span>
-    <h2 class="sec-title reveal">こんなお悩み、ありませんか？</h2>
-    <p class="sec-lead reveal">キャンピングカーに憧れはあるけれど、一歩踏み出せない。<br>そんな声を、私たちはたくさん聞いてきました。</p>
-    <div class="worry-list">
-      <div class="worry-item reveal">
-        <div class="worry-icon">？</div>
-        <div>
-          <h3>「ミニバンでは物足りないが、本格キャンピングカーは大きすぎる…」</h3>
-          <p>運転や駐車場への不安（立体駐車場に入るか）、街乗りでの使い勝手の悪さが気になる。</p>
-        </div>
+    <span class="sec-label reveal">HONNE</span>
+    <h2 class="sec-title reveal">キャンピングカー、<br>憧れはあるけど踏み切れない。</h2>
+    <p class="sec-lead reveal">決めきれないのには、ちゃんと理由がある。<br>ご家族からよく聞く、リアルな声を集めました。</p>
+    <div class="bubble-list">
+      <div class="bubble-row reveal">
+        <img class="bubble-face" src="images/worry_01.webp" data-ph="w1" alt="悩むパパ">
+        <div class="bubble">ミニバンじゃ物足りない。かといって、本格キャンピングカーは大きすぎるし高すぎる…</div>
       </div>
-      <div class="worry-item reveal">
-        <div class="worry-icon">？</div>
-        <div>
-          <h3>「ホテル代や予約に縛られず、もっと自由に家族旅行を楽しみたい」</h3>
-          <p>ハイシーズンの高額な宿泊費の悩みと、思い立ったらすぐ出発したい欲求。</p>
-        </div>
+      <div class="bubble-row is-right reveal">
+        <img class="bubble-face" src="images/worry_02.webp" data-ph="w2" alt="悩むママ">
+        <div class="bubble">ハイシーズンのホテル代も予約合戦も、正直もうウンザリ。もっと気ままに旅したいな。</div>
       </div>
-      <div class="worry-item reveal">
-        <div class="worry-icon">？</div>
-        <div>
-          <h3>「通勤や普段の買い物で乗っても違和感のない、かっこいい車がいい」</h3>
-          <p>デザイン性・カスタム性へのこだわりと、日常使いでの実用性を妥協したくない想い。</p>
-        </div>
+      <div class="bubble-row reveal">
+        <img class="bubble-face" src="images/worry_03.webp" data-ph="w3" alt="期待するパパ">
+        <div class="bubble">どうせ乗るなら、通勤や買い物でも様になる、かっこいい一台がいい！</div>
       </div>
     </div>
-    <p class="worry-close reveal">その悩み、<span class="em">ウェルモビリティRV</span>がすべて解決します。</p>
+    <div class="check-card reveal">
+      <ul>
+        <li>ホテル代を気にせず家族旅行を楽しみたい</li>
+        <li>通勤や買い物など、普段使いも妥協したくない</li>
+        <li>大きすぎる車は予算も運転も不安</li>
+        <li>それでも、ワクワクする特別な1台に乗りたい</li>
+      </ul>
+    </div>
+    <p class="worry-close reveal">その想い、<span class="em">ウェルモビリティRV</span>がまるごと叶えます。</p>
   </div>
 </section>
 
@@ -690,6 +718,9 @@ const PLACEHOLDERS = {
   fv:    {file:'fv_main.png',         size:'1920×1280px', label:'メインビジュアル：夕暮れのビーチで%0Aハッチバックを開けてくつろぐ家族'},
   sol1:  {file:'solution_daily.png',  size:'1200×800px',  label:'富士山が見える街中を走る白いハイエース'},
   sol2:  {file:'solution_interior.png',size:'1200×800px', label:'ベッドキットを展開した車内'},
+  w1:    {file:'worry_01.webp',       size:'400×400px',   label:'30〜40代パパの悩む表情'},
+  w2:    {file:'worry_02.webp',       size:'400×400px',   label:'30〜40代ママの悩む表情'},
+  w3:    {file:'worry_03.webp',       size:'400×400px',   label:'期待に目を輝かせる表情'},
   r1:    {file:'reason_01.jpg',       size:'900×600px',   label:'駐車場・街中をスムーズに走行するシーン'},
   r2:    {file:'reason_02.png',       size:'900×600px',   label:'ベッドキットに家族が横になっている車内'},
   r3:    {file:'reason_03.jpg',       size:'900×600px',   label:'アースカラーの外観＆ウッド調内装'},
