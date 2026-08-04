@@ -289,6 +289,19 @@ body{overflow-x:hidden}
 .wmrv-lp.wmrv-lp :is(.sec-title,.sol-text h3,.reason-body h3,.merit-text h3,.voice-card h3,.offer-card h3,.lineup-card h3,.lineup-common h4,.bubble-row h3){color:var(--green-900)}
 .wmrv-lp.wmrv-lp :is(.fv h1,.brand-text h2,.final h2){color:#fff}
 
+/* ===== このページ専用：SWELLのパンくずリスト・ページタイトル痕・上下余白を除去 ===== */
+.c-breadcrumb,.p-breadcrumb,.c-pageTitle,.p-articleThumb{display:none!important}
+.l-content{padding-top:0!important;padding-bottom:0!important}
+.post_content{margin-top:0!important;margin-bottom:0!important}
+.post_content>*:first-child{margin-top:0!important}
+
+/* ===== スマホ：FVのLINEボタンを適正サイズに（1行に収める） ===== */
+@media(max-width:600px){
+  .wmrv-lp .fv-cta .btn-line{font-size:13.5px;padding:13px 22px;white-space:nowrap}
+  .wmrv-lp .fv-cta .btn-line svg{width:18px;height:18px}
+  .wmrv-lp .fv{min-height:86vh;padding:90px 0 76px}
+}
+
 </style>
 <div class="wmrv-lp">
 <section class="fv" id="top">
