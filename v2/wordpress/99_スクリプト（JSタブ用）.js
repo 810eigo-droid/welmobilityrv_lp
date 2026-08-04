@@ -1,4 +1,5 @@
-(function(){
+function wmrvInit(){
+
   document.head.insertAdjacentHTML('beforeend','<style>.wmrv-js .wmrv-lp .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}</style>');
   document.body.classList.add('wmrv-js');
   var els = document.querySelectorAll('.wmrv-lp .reveal');
@@ -18,4 +19,6 @@
       header.classList.toggle('is-scrolled', window.scrollY > 10);
     }, { passive: true });
   }
-})();
+
+}
+if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",wmrvInit);}else{wmrvInit();}
