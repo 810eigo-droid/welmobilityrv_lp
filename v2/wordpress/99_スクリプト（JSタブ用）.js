@@ -1,4 +1,5 @@
 (function(){
+  document.body.classList.add('wmrv-js');
   var els = document.querySelectorAll('.wmrv-lp .reveal');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function(entries){
