@@ -282,6 +282,13 @@ body{overflow-x:hidden}
 }
 .wmrv-lp .fv,.wmrv-lp .final{isolation:isolate}
 
+/* ===== SWELLテーマの見出し装飾（帯・下線・白文字など）をLP内でだけ無効化 ===== */
+.wmrv-lp.wmrv-lp :is(h1,h2,h3,h4,h5){background:transparent!important;border:0!important;padding:0!important;box-shadow:none!important;border-radius:0!important}
+.wmrv-lp.wmrv-lp :is(h1,h2,h3,h4,h5)::before,
+.wmrv-lp.wmrv-lp :is(h1,h2,h3,h4,h5)::after{content:none!important;display:none!important}
+.wmrv-lp.wmrv-lp :is(.sec-title,.sol-text h3,.reason-body h3,.merit-text h3,.voice-card h3,.offer-card h3,.lineup-card h3,.lineup-common h4,.bubble-row h3){color:var(--green-900)}
+.wmrv-lp.wmrv-lp :is(.fv h1,.brand-text h2,.final h2){color:#fff}
+
 </style>
 <div class="wmrv-lp">
 <section class="fv" id="top">
