@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ウェルモビリティRV｜街乗り、ときどき秘密基地。月々4万円〜のバンライフ</title>
+<meta name="description" content="平日は家族の買い物や送迎に、週末は一瞬で家族だけの秘密基地へ。普段使いできるキャンピングカー「ウェルモビリティRV」。LINE登録で最新カタログ・月々シミュレーション・開発ストーリーを無料プレゼント中。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-950:#12291C;
+  --green-900:#1B4332;
+  --green-700:#2D6A4F;
+  --green-500:#40916C;
+  --green-100:#DFF0E4;
+  --green-050:#EEF6EF;
+  --line:#06C755;
+  --line-dark:#05A847;
+  --bg:#F8F7F1;
+  --ink:#25342B;
+  --ink-soft:#5A6B60;
+  --sand:#EFEAE0;
+  --accent:#E9A23B;
+  --accent-strong:#D9822B;
+  --accent-deep:#C1761C;
+  --accent-pale:#FBEFDA;
+  --white:#FFFFFF;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(27,67,50,.10);
+  --font:'Noto Sans JP',"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --font-round:'Zen Maru Gothic','Noto Sans JP',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.9;
+  letter-spacing:.03em;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.inner{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ===== 見出しフォント比較用スイッチ（サンプル限定・納品時に削除するブロック） ===== */
+body.font-gothic{--font-round:'Noto Sans JP',"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}
+.font-switch{
+  position:fixed;left:14px;bottom:14px;z-index:9992;
+  background:rgba(255,255,255,.95);border:1px solid rgba(27,67,50,.18);
+  border-radius:999px;padding:6px 8px;box-shadow:0 6px 20px rgba(27,67,50,.18);
+  display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--ink-soft);
+}
+.font-switch span{padding-left:6px;letter-spacing:.05em}
+.font-switch button{
+  border:none;cursor:pointer;font-family:inherit;font-size:11px;font-weight:700;
+  padding:6px 12px;border-radius:999px;background:transparent;color:var(--ink-soft);
+}
+.font-switch button.is-active{background:var(--green-900);color:#fff}
+@media(max-width:820px){.font-switch{bottom:76px}}
+/* ===== /フォント切替 ===== */
+
+/* ===== SAMPLE watermark（納品時に削除するブロック） ===== */
+.wm-tile{
+  position:fixed;inset:0;z-index:9990;pointer-events:none;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='300'%3E%3Cg transform='rotate(-24 210 150)'%3E%3Ctext x='210' y='142' font-family='Arial,sans-serif' font-size='36' font-weight='bold' fill='rgba(27,67,50,0.09)' text-anchor='middle'%3ESAMPLE%3C/text%3E%3Ctext x='210' y='180' font-family='Arial,sans-serif' font-size='22' font-weight='bold' fill='rgba(27,67,50,0.09)' text-anchor='middle'%3ETAF-Design%3C/text%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:repeat;
+}
+.wm-badge{
+  position:fixed;top:0;left:0;z-index:9991;pointer-events:none;
+  background:rgba(27,67,50,.82);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:.12em;
+  padding:6px 14px;border-radius:0 0 12px 0;
+}
+/* ===== /watermark ===== */
+
+/* ---------- header ---------- */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(248,247,241,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(27,67,50,.08);
+  transition:box-shadow .3s;
+}
+.header.is-scrolled{box-shadow:0 4px 20px rgba(27,67,50,.08)}
+.header-inner{
+  max-width:1180px;margin:0 auto;padding:12px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--green-900)}
+.logo img{height:40px;width:auto}
+.logo-text{font-family:var(--font-round);font-size:20px;line-height:1.2}
+.logo-text small{display:block;font-size:10px;font-weight:700;color:var(--green-500);letter-spacing:.2em}
+.header-nav{display:flex;gap:26px;font-size:14px;font-weight:500;color:var(--ink-soft)}
+.header-nav a:hover{color:var(--green-700)}
+.btn-line{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--line);color:#fff;font-weight:700;
+  border-radius:999px;padding:12px 26px;font-size:15px;
+  box-shadow:0 6px 18px rgba(6,199,85,.35);
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+.btn-line:hover{transform:translateY(-2px);background:var(--line-dark);box-shadow:0 10px 24px rgba(6,199,85,.45)}
+.btn-line svg{flex-shrink:0}
+.header .btn-line{padding:10px 20px;font-size:13px}
+@media(max-width:820px){
+  .header-nav{display:none}
+  .logo-text{font-size:17px}
+}
+
+/* ---------- hero ---------- */
+.fv{
+  position:relative;min-height:92vh;display:flex;align-items:center;
+  padding:120px 0 90px;overflow:hidden;color:#fff;
+}
+.fv-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.fv::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,rgba(18,41,28,.82) 0%,rgba(18,41,28,.55) 45%,rgba(18,41,28,.15) 100%);
+}
+.fv-inner{max-width:1180px;margin:0 auto;padding:0 24px;width:100%}
+.fv-badge{
+  display:inline-block;background:var(--accent-strong);color:#fff;
+  font-size:13px;font-weight:700;letter-spacing:.08em;
+  padding:6px 18px;border-radius:999px;margin-bottom:22px;
+}
+.fv h1{
+  font-family:var(--font-round);
+  font-size:clamp(34px,5.6vw,60px);font-weight:900;line-height:1.45;
+  text-shadow:0 2px 24px rgba(0,0,0,.35);
+}
+.fv h1 .accent{color:#FFC85C}
+.fv-lead{
+  margin-top:20px;font-size:clamp(15px,1.8vw,18px);font-weight:500;
+  max-width:560px;text-shadow:0 1px 12px rgba(0,0,0,.4);
+}
+.fv-cta{margin-top:36px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.fv-cta .btn-line{font-size:17px;padding:18px 42px}
+.fv-cta-note{font-size:12px;opacity:.9;letter-spacing:.06em}
+.fv-scroll{
+  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  font-size:10px;letter-spacing:.3em;opacity:.8;text-align:center;
+}
+.fv-scroll::after{
+  content:"";display:block;width:1px;height:38px;margin:8px auto 0;
+  background:linear-gradient(#fff,transparent);
+  animation:scrollline 1.8s ease-in-out infinite;
+}
+@keyframes scrollline{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- section 共通 ---------- */
+section{padding:96px 0}
+.sec-label{
+  display:block;text-align:center;font-size:13px;font-weight:700;
+  letter-spacing:.22em;color:var(--accent-deep);margin-bottom:10px;
+}
+.sec-title{
+  text-align:center;font-family:var(--font-round);
+  font-size:clamp(24px,3.4vw,36px);font-weight:900;color:var(--green-900);
+  line-height:1.5;margin-bottom:18px;
+}
+.sec-lead{text-align:center;font-size:15px;color:var(--ink-soft);max-width:640px;margin:0 auto 56px}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.is-visible{opacity:1;transform:none}
+
+/* ---------- 悩み ---------- */
+.worry{background:var(--white)}
+.bubble-list{display:flex;flex-direction:column;gap:26px;max-width:680px;margin:0 auto}
+.bubble-row{display:flex;gap:18px;align-items:flex-start}
+.bubble-row.is-right{flex-direction:row-reverse}
+.bubble-face{
+  flex-shrink:0;width:82px;height:82px;border-radius:50%;object-fit:cover;
+  border:3px solid var(--green-050);box-shadow:0 4px 14px rgba(27,67,50,.12);
+}
+.bubble{
+  position:relative;background:var(--bg);border:1px solid rgba(27,67,50,.10);
+  border-radius:16px;padding:18px 24px;
+  font-size:15.5px;font-weight:700;color:var(--green-900);line-height:1.8;
+  align-self:center;
+}
+.bubble::before{
+  content:"";position:absolute;top:26px;left:-9px;
+  width:16px;height:16px;background:var(--bg);
+  border-left:1px solid rgba(27,67,50,.10);border-bottom:1px solid rgba(27,67,50,.10);
+  transform:rotate(45deg);
+}
+.bubble-row.is-right .bubble::before{
+  left:auto;right:-9px;transform:rotate(225deg);
+}
+.check-card{
+  max-width:640px;margin:44px auto 0;background:var(--bg);
+  border:1px solid rgba(27,67,50,.10);border-radius:var(--radius);
+  padding:30px 36px;
+}
+.check-card ul{list-style:none}
+.check-card li{
+  position:relative;padding:9px 0 9px 36px;
+  font-size:15px;font-weight:700;color:var(--ink);line-height:1.7;
+}
+.check-card li::before{
+  content:"✓";position:absolute;left:0;top:11px;
+  width:23px;height:23px;border-radius:6px;
+  background:var(--green-500);color:#fff;
+  font-size:14px;font-weight:900;text-align:center;line-height:23px;
+}
+@media(max-width:600px){
+  .bubble-face{width:64px;height:64px}
+  .bubble{font-size:14px;padding:15px 18px}
+  .check-card{padding:24px 22px}
+}
+.worry-close{
+  margin-top:52px;text-align:center;font-family:var(--font-round);
+  font-size:clamp(18px,2.6vw,24px);font-weight:900;color:var(--green-700);
+}
+.worry-close .em{
+  background:linear-gradient(transparent 62%,#F6D890 62%);padding:0 2px;
+}
+
+/* ---------- 解決策 ---------- */
+.solution{background:linear-gradient(180deg,var(--bg) 0%,var(--green-050) 100%)}
+.sol-block{
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+  margin-bottom:80px;
+}
+.sol-block:last-child{margin-bottom:0}
+.sol-block.is-flip .sol-media{order:2}
+.sol-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.sol-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.sol-num{
+  font-family:var(--font-round);font-size:13px;font-weight:900;
+  color:var(--accent-deep);letter-spacing:.18em;margin-bottom:8px;
+}
+.sol-text h3{
+  font-family:var(--font-round);font-size:clamp(21px,2.6vw,27px);
+  font-weight:900;color:var(--green-900);line-height:1.55;margin-bottom:16px;
+}
+.sol-text p{font-size:15px;color:var(--ink-soft)}
+.sim{
+  margin-top:22px;background:var(--white);border-radius:var(--radius);
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.sim-title{font-size:13px;font-weight:700;color:var(--green-900);margin-bottom:16px;text-align:center}
+.sim-row{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.sim-row:last-child{margin-bottom:0}
+.sim-label{flex-shrink:0;width:7.5em;font-size:12px;font-weight:700;color:var(--ink-soft);text-align:right}
+.sim-bar{height:26px;border-radius:6px;display:flex;align-items:center;padding:0 10px;font-size:12px;font-weight:900;color:#fff;white-space:nowrap}
+.sim-bar.hotel{width:100%;background:#A8B5AC}
+.sim-bar.rv{width:34%;background:var(--green-500)}
+.sim-note{margin-top:12px;font-size:10.5px;color:var(--ink-soft);text-align:center}
+@media(max-width:820px){
+  .sol-block{grid-template-columns:1fr;gap:26px;margin-bottom:64px}
+  .sol-block.is-flip .sol-media{order:0}
+}
+
+/* ---------- 選ばれる理由 ---------- */
+.reason{background:var(--white)}
+.reason-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.reason-card{
+  background:var(--bg);border-radius:var(--radius);overflow:hidden;
+  border:1px solid rgba(27,67,50,.07);
+  transition:transform .3s,box-shadow .3s;
+}
+.reason-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.reason-card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.reason-body{padding:24px 24px 30px}
+.reason-num{
+  font-family:var(--font-round);font-weight:900;font-size:13px;
+  color:var(--accent-deep);letter-spacing:.15em;
+}
+.reason-body h3{font-size:18px;font-weight:900;color:var(--green-900);margin:6px 0 10px;line-height:1.55}
+.reason-body p{font-size:13.5px;color:var(--ink-soft)}
+@media(max-width:820px){.reason-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}}
+
+/* ---------- ブランド想い ---------- */
+.brand{background:var(--green-900);color:#fff;position:relative;overflow:hidden}
+.brand::before{
+  content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
+  border-radius:50%;background:rgba(255,255,255,.04);
+}
+.brand-grid{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.brand-media{width:min(340px,80vw);aspect-ratio:1/1;border-radius:50%;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.3);margin:0 auto}
+.brand-media img{width:100%;height:100%;object-fit:cover}
+.brand-label{
+  display:inline-block;background:var(--accent-strong);color:#fff;
+  font-size:12px;font-weight:700;letter-spacing:.14em;
+  padding:5px 16px;border-radius:999px;margin-bottom:18px;
+}
+.brand-text h2{
+  font-family:var(--font-round);font-size:clamp(22px,3vw,32px);
+  font-weight:900;line-height:1.6;margin-bottom:20px;
+}
+.brand-text p{font-size:15px;line-height:2.1;color:rgba(255,255,255,.85);margin-bottom:14px}
+@media(max-width:820px){.brand-grid{grid-template-columns:1fr;gap:40px}.brand-text{text-align:left}}
+
+/* ---------- 経済メリット ---------- */
+.merit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.merit-zero{
+  background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
+  text-align:center;padding:56px 30px;
+}
+.merit-zero .zero{
+  font-family:var(--font-round);font-size:clamp(64px,8vw,96px);
+  font-weight:900;color:var(--accent-strong);line-height:1;
+}
+.merit-zero .zero-label{margin-top:14px;font-size:14px;font-weight:700;color:var(--green-900)}
+.merit-text h3{font-family:var(--font-round);font-size:clamp(20px,2.6vw,26px);font-weight:900;color:var(--green-900);line-height:1.6;margin-bottom:16px}
+.merit-text p{font-size:15px;color:var(--ink-soft);margin-bottom:12px}
+@media(max-width:820px){.merit-grid{grid-template-columns:1fr;gap:30px}}
+
+/* ---------- お客様の声 ---------- */
+.voice{background:var(--white)}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.voice-card{
+  background:var(--bg);border-radius:var(--radius);padding:32px;
+  border:1px solid rgba(27,67,50,.07);display:flex;flex-direction:column;gap:18px;
+}
+.voice-card img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px}
+.voice-label{
+  display:inline-block;align-self:flex-start;background:var(--accent-strong);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:.12em;
+  padding:4px 14px;border-radius:999px;
+}
+.voice-card h3{font-size:17px;font-weight:900;color:var(--green-900);line-height:1.6}
+.voice-card p{font-size:14px;color:var(--ink-soft)}
+.voice-meta{font-size:12px;color:var(--green-500);font-weight:700}
+@media(max-width:820px){.voice-grid{grid-template-columns:1fr}}
+
+/* ---------- LINE特典 ---------- */
+.offer{background:linear-gradient(160deg,#EAF8EE 0%,#DFF3E4 100%);position:relative;overflow:hidden}
+.offer::before{
+  content:"";position:absolute;left:-100px;bottom:-140px;width:380px;height:380px;
+  border-radius:50%;background:rgba(6,199,85,.07);
+}
+.offer .sec-label{color:var(--line-dark)}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:56px}
+.offer-card{
+  background:var(--white);border-radius:var(--radius);padding:36px 28px;
+  text-align:center;box-shadow:0 8px 26px rgba(6,120,60,.10);
+  position:relative;
+}
+.offer-badge{
+  position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  background:var(--accent-strong);color:#fff;font-size:11px;font-weight:700;
+  padding:4px 16px;border-radius:999px;letter-spacing:.1em;white-space:nowrap;
+}
+.offer-icon{
+  width:74px;height:74px;margin:8px auto 18px;border-radius:50%;
+  background:#E4F8EA;display:flex;align-items:center;justify-content:center;
+}
+.offer-card h3{font-size:17px;font-weight:900;color:var(--green-900);margin-bottom:10px;line-height:1.5}
+.offer-card p{font-size:13px;color:var(--ink-soft);text-align:left}
+.offer-cta{text-align:center}
+.offer-cta .btn-line{font-size:17px;padding:18px 44px}
+.offer-cta-note{margin-top:12px;font-size:12px;color:var(--ink-soft)}
+@media(max-width:820px){.offer-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto 48px}}
+
+/* ---------- 最終CTA ---------- */
+.final{
+  position:relative;color:#fff;text-align:center;overflow:hidden;
+  padding:130px 0;
+}
+.final-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 72%;z-index:-2}
+.final::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(18,41,28,.55) 0%,rgba(18,41,28,.28) 45%,rgba(18,41,28,.55) 100%);
+}
+.final-badge{
+  display:inline-block;background:var(--accent-strong);color:#fff;font-size:13px;
+  font-weight:700;padding:6px 20px;border-radius:999px;margin-bottom:24px;letter-spacing:.08em;
+}
+.final h2{
+  font-family:var(--font-round);font-size:clamp(26px,4.4vw,44px);
+  font-weight:900;line-height:1.6;margin-bottom:18px;
+  text-shadow:0 2px 10px rgba(0,0,0,.65),0 2px 28px rgba(0,0,0,.5);
+}
+.final p{font-size:15px;margin-bottom:36px;opacity:.95;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.final .btn-line{font-size:18px;padding:20px 52px}
+.final-note{margin-top:14px;font-size:12px;opacity:.85}
+
+
+/* ---------- ラインナップ ---------- */
+.lineup{background:var(--white)}
+.lineup-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:40px}
+.lineup-card{background:var(--bg);border:1px solid rgba(27,67,50,.10);border-radius:var(--radius);padding:34px 28px 30px;display:flex;flex-direction:column;gap:18px}
+.lineup-card h3{font-family:var(--font-round);font-size:22px;font-weight:900;color:var(--green-900);text-align:center;line-height:1.4}
+.lineup-feats{list-style:none;border-top:1px dashed rgba(27,67,50,.20);border-bottom:1px dashed rgba(27,67,50,.20);padding:14px 2px;display:flex;flex-direction:column;gap:6px}
+.lineup-feats li{position:relative;padding-left:20px;font-size:14px;font-weight:700;color:var(--ink)}
+.lineup-feats li::before{content:"●";position:absolute;left:2px;top:0;font-size:8px;color:var(--green-500)}
+.lineup-price{text-align:center;margin-top:auto}
+.lineup-price .once{font-size:13px;font-weight:700;color:var(--ink-soft)}
+.lineup-price .once b{font-size:20px;color:var(--green-900)}
+.lineup-price .monthly{margin-top:6px;font-family:var(--font-round);font-weight:900;color:var(--accent-strong);font-size:14px}
+.lineup-price .monthly b{font-size:25px}
+.lineup-price .lu-note{margin-top:6px;font-size:11px;color:var(--ink-soft);line-height:1.7}
+.lineup-common{max-width:760px;margin:0 auto 40px;background:var(--green-050);border-radius:var(--radius);padding:26px 34px}
+.lineup-common h4{font-size:15px;font-weight:900;color:var(--green-900);margin-bottom:10px;text-align:center}
+.lineup-common ul{list-style:none}
+.lineup-common li{position:relative;padding:5px 0 5px 30px;font-size:13.5px;color:var(--ink)}
+.lineup-common li::before{content:"✓";position:absolute;left:0;top:7px;width:20px;height:20px;border-radius:5px;background:var(--green-500);color:#fff;font-size:12px;font-weight:900;text-align:center;line-height:20px}
+.lineup-cta{text-align:center}
+@media(max-width:820px){.lineup-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto 36px}}
+
+/* ---------- footer ---------- */
+.footer{background:var(--green-950);color:rgba(255,255,255,.8);padding:56px 0 110px;font-size:13px}
+.footer-inner{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;align-items:flex-start}
+.footer .logo{color:#fff;margin-bottom:14px}
+.footer-info p{line-height:2;color:rgba(255,255,255,.65)}
+.footer-sns{display:flex;gap:14px;margin-top:18px}
+.footer-sns a{
+  width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;transition:background .2s;
+}
+.footer-sns a:hover{background:var(--green-500)}
+.copyright{width:100%;text-align:center;margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;color:rgba(255,255,255,.45)}
+
+/* ---------- 固定LINEボタン ---------- */
+.fixed-cta{
+  position:fixed;right:22px;bottom:22px;z-index:200;
+  transition:opacity .3s,transform .3s;
+}
+.fixed-cta .btn-line{padding:16px 30px;font-size:15px}
+.fixed-cta.is-hidden{opacity:0;pointer-events:none;transform:translateY(10px)}
+@media(max-width:820px){
+  .fixed-cta{right:0;bottom:0;left:0}
+  .fixed-cta .btn-line{width:100%;border-radius:0;padding:17px;font-size:15px;box-shadow:0 -4px 20px rgba(0,0,0,.15)}
+  .footer{padding-bottom:140px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== SAMPLE表示（ご成約後に削除します） ===== -->
+<div class="wm-tile" aria-hidden="true"></div>
+<div class="wm-badge">SAMPLE ─ TAF-Design</div>
+<!-- ===== /SAMPLE表示 ===== -->
+
+<!-- ===== 見出しフォント比較用スイッチ（サンプル限定・納品時に削除） ===== -->
+<div class="font-switch">
+  <span>見出し</span>
+  <button type="button" id="fontRound" class="is-active">丸ゴシック</button>
+  <button type="button" id="fontGothic">ゴシック</button>
+</div>
+<!-- ===== /フォント切替 ===== -->
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a class="logo" href="#top">
+      <img src="../images/logo.jpg" data-ph="logo" alt="ウェルモビリティRV" style="display:none">
+      <span class="logo-text">ウェルモビリティRV<small>WEL MOBILITY RV</small></span>
+    </a>
+    <nav class="header-nav">
+      <a href="#solution">特長</a>
+      <a href="#reason">選ばれる理由</a>
+      <a href="#lineup">ラインナップ</a>
+      <a href="#voice">お客様の声</a>
+      <a href="#offer">LINE特典</a>
+    </nav>
+    <a class="btn-line" href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+      LINEで相談する
+    </a>
+  </div>
+</header>
+
+<!-- ===== 1. ファーストビュー ===== -->
+<section class="fv" id="top">
+  <img class="fv-bg" src="../images/fv_main.png" data-ph="fv" alt="夕暮れのビーチでハッチバックを開けてくつろぐ家族">
+  <div class="fv-inner">
+    <span class="fv-badge reveal">月々4万円〜ではじめるバンライフ</span>
+    <h1 class="reveal">街乗り、<br>ときどき<span class="accent">秘密基地。</span></h1>
+    <p class="fv-lead reveal">平日は家族のいつもの買い物や送迎に。<br>週末は、一瞬で家族だけの秘密基地へ。</p>
+    <div class="fv-cta reveal">
+      <a class="btn-line" href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+        最新カタログ＆試乗予約はLINEで
+      </a>
+      <span class="fv-cta-note">＼ まずは30秒でかんたん登録 ／</span>
+    </div>
+  </div>
+  <div class="fv-scroll">SCROLL</div>
+</section>
+
+<!-- ===== 2. 共感（お悩み） ===== -->
+<section class="worry">
+  <div class="inner">
+    <span class="sec-label reveal">HONNE</span>
+    <h2 class="sec-title reveal">キャンピングカー、<br>憧れはあるけど踏み切れない。</h2>
+    <p class="sec-lead reveal">決めきれないのには、ちゃんと理由がある。<br>ご家族からよく聞く、リアルな声を集めました。</p>
+    <div class="bubble-list">
+      <div class="bubble-row reveal">
+        <img class="bubble-face" src="../images/worry_01.webp" data-ph="w1" alt="悩むパパ">
+        <div class="bubble">ミニバンじゃ物足りない。かといって、本格キャンピングカーは大きすぎるし高すぎる…</div>
+      </div>
+      <div class="bubble-row is-right reveal">
+        <img class="bubble-face" src="../images/worry_02.webp" data-ph="w2" alt="悩むママ">
+        <div class="bubble">ハイシーズンのホテル代も予約合戦も、正直もうウンザリ。もっと気ままに旅したいな。</div>
+      </div>
+      <div class="bubble-row reveal">
+        <img class="bubble-face" src="../images/worry_03.webp" data-ph="w3" alt="期待するパパ">
+        <div class="bubble">どうせ乗るなら、通勤や買い物でも様になる、かっこいい一台がいい！</div>
+      </div>
+    </div>
+    <div class="check-card reveal">
+      <ul>
+        <li>ホテル代を気にせず家族旅行を楽しみたい</li>
+        <li>通勤や買い物など、普段使いも妥協したくない</li>
+        <li>大きすぎる車は予算も運転も不安</li>
+        <li>それでも、ワクワクする特別な1台に乗りたい</li>
+      </ul>
+    </div>
+    <p class="worry-close reveal">その想い、<span class="em">ウェルモビリティRV</span>がまるごと叶えます。</p>
+  </div>
+</section>
+
+<!-- ===== 3. 解決策 ===== -->
+<section class="solution" id="solution">
+  <div class="inner">
+    <span class="sec-label reveal">SOLUTION</span>
+    <h2 class="sec-title reveal">ウェルモビリティRVが叶える<br>新しいクルマのカタチ</h2>
+    <p class="sec-lead reveal">「日常」と「非日常」を、この一台で。</p>
+
+    <div class="sol-block">
+      <div class="sol-media reveal"><img src="../images/solution_daily.png" data-ph="sol1" alt="街中を走るオリーブグリーンのハイエース"></div>
+      <div class="sol-text reveal">
+        <div class="sol-num">POINT 01</div>
+        <h3>1台2役<br>「普段は5人乗り ⇄ 週末は秘密基地」</h3>
+        <p>平日は扱いやすい5人乗り乗用車として街乗り。シートを倒し簡単なキットを組み立てるだけで、一瞬で大人も広々眠れる快適ベッド空間へ変身します。</p>
+      </div>
+    </div>
+
+    <div class="sol-block is-flip">
+      <div class="sol-media reveal"><img src="../images/solution_interior.png" data-ph="sol2" alt="ベッドキットを展開した車内"></div>
+      <div class="sol-text reveal">
+        <div class="sol-num">POINT 02</div>
+        <h3>月々4万円〜<br>手が届くリースプラン</h3>
+        <p>「本格キャンピングカーは800万〜1000万して手が出ない」という悩みを解消。車検・メンテナンス込みで月々定額のリースプランなら、夢のバンライフが現実に。</p>
+        <div class="sim">
+          <div class="sim-title">年間の家族旅行コスト イメージ比較</div>
+          <div class="sim-row">
+            <div class="sim-label">ホテル旅行</div>
+            <div class="sim-bar hotel">宿泊費 約24万円/年</div>
+          </div>
+          <div class="sim-row">
+            <div class="sim-label">RVで車中泊</div>
+            <div class="sim-bar rv">¥0</div>
+          </div>
+          <div class="sim-note">※ 家族4人・年4回旅行（1泊6万円想定）の場合のシミュレーション例</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. 選ばれる理由 ===== -->
+<section class="reason" id="reason">
+  <div class="inner">
+    <span class="sec-label reveal">REASON</span>
+    <h2 class="sec-title reveal">ウェルモビリティRVが選ばれる<br>3つの理由</h2>
+    <div class="reason-grid">
+      <div class="reason-card reveal">
+        <img src="../images/reason_01.jpg" data-ph="r1" alt="開放的な車内と富士山の景色">
+        <div class="reason-body">
+          <div class="reason-num">REASON 01</div>
+          <h3>「普段使い」徹底重視</h3>
+          <p>CamPitのベースは「ハイエース」。一般的な立体駐車場（高さ制限2.1m）にも入るサイズ感で、街乗りでも毎日の買い物や子どもの送迎もストレスなく運転できる抜群の操作性です。<br><small>※ワイド車は非対応</small></p>
+        </div>
+      </div>
+      <div class="reason-card reveal">
+        <img src="../images/reason_02.png" data-ph="r2" alt="ベッドキットでくつろぐ家族">
+        <div class="reason-body">
+          <div class="reason-num">REASON 02</div>
+          <h3>月々4万円から！<br>自分に合った乗り方が選べる手ごろ感</h3>
+          <p>「キャンピングカーは高い！」という常識を覆す1台。月々のお支払いを抑えて賢く乗れるお得なリースプランはもちろん、長く愛用できる一括・ローンでの購入も自由自在。お子様が小さな今だけの数年間、思いっきり思い出を作る最高の相棒です。</p>
+        </div>
+      </div>
+      <div class="reason-card reveal">
+        <img src="../images/reason_03.jpg" data-ph="r3" alt="アースカラーのおしゃれな外観">
+        <div class="reason-body">
+          <div class="reason-num">REASON 03</div>
+          <h3>もしもの時の避難場所</h3>
+          <p>地震大国日本で、もしもの災害に備える1台。緊急時の移動式避難所として、プライバシーを守りながら快適に過ごせる「第2の家」になります。日常のレジャーだけでなく、万が一の防災まで家族の安心をしっかり支えます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. ブランド想い ===== -->
+<section class="brand">
+  <div class="inner">
+    <div class="brand-grid">
+      <div class="brand-media reveal"><img src="../images/brand_story.jpg" data-ph="brand" alt="キャンプ場での家族の団らん"></div>
+      <div class="brand-text reveal">
+        <span class="brand-label">BRAND STORY</span>
+        <h2>移動の安心感と、<br>自由な冒険を。</h2>
+        <p>これまで「ウェルモビリティ」として移動を通じた快適な暮らしを提案してきた私たちが描くひとつの答え、それが「ウェルモビリティRV」です。</p>
+        <p>金曜日の夜、思い立って出発する高揚感。朝カーテンを開けた瞬間に広がる絶景。特別な場所に行かなくても、愛車がいつでも自分たちの「秘密基地」になる体験をお届けします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. 経済的メリット ===== -->
+<section class="merit">
+  <div class="inner">
+    <span class="sec-label reveal">MERIT</span>
+    <h2 class="sec-title reveal">旅のコストが、こんなに変わる。</h2>
+    <div class="merit-grid">
+      <div class="merit-zero reveal">
+        <div class="zero">¥0</div>
+        <div class="zero-label">ハイシーズンのホテル代費用</div>
+      </div>
+      <div class="merit-text reveal">
+        <h3>年間で数十万円の旅費を節約！</h3>
+        <p>ゴールデンウィークや夏休みなど、ホテル代が跳ね上がる時期でも車中泊なら宿泊費は0円。浮いた予算で、現地での美味しい食事や体験アクティビティを思い切り楽しめます。</p>
+        <p>さらに、メンテナンスリースプランでは、ハイエースキャンピングカーの特徴を生かして月々のお支払いを大幅に圧縮。月々定額なので安心してキャンピングカーライフを楽しめます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ラインナップ ===== -->
+<section class="lineup" id="lineup">
+  <div class="inner">
+    <span class="sec-label reveal">LINE UP</span>
+    <h2 class="sec-title reveal">ウェルモビリティRV ラインナップ</h2>
+    <div class="lineup-grid">
+      <div class="lineup-card reveal">
+        <h3>CamPit One</h3>
+        <ul class="lineup-feats"><li>フルフラットシート</li><li>ベッドキット</li></ul>
+        <div class="lineup-price">
+          <div class="once">一括 <b>¥5,990,000</b>（税込）</div>
+          <div class="monthly">月々 <b>¥59,900</b>（税込）×72回</div>
+          <div class="lu-note">別途ボーナス年2回<br>※ガソリン・標準</div>
+        </div>
+      </div>
+      <div class="lineup-card reveal">
+        <h3>CamPit Roomy</h3>
+        <ul class="lineup-feats"><li>フルフラットシート</li><li>2段ベッドキット</li></ul>
+        <div class="lineup-price">
+          <div class="once">一括 <b>¥6,490,000</b>（税込）</div>
+          <div class="monthly">月々 <b>¥63,800</b>（税込）×72回</div>
+          <div class="lu-note">別途ボーナス年2回<br>※ガソリン・標準</div>
+        </div>
+      </div>
+      <div class="lineup-card reveal">
+        <h3>CamPit Delux</h3>
+        <ul class="lineup-feats"><li>フルフラットシート</li><li>ベッドキット</li><li>ポータブル給排水システム</li></ul>
+        <div class="lineup-price">
+          <div class="once">一括 <b>¥6,990,000</b>（税込）</div>
+          <div class="monthly">月々 <b>¥74,000</b>（税込）×72回</div>
+          <div class="lu-note">別途ボーナス年2回<br>※ガソリン・標準</div>
+        </div>
+      </div>
+    </div>
+    <div class="lineup-common reveal">
+      <h4>共通スペック</h4>
+      <ul>
+        <li>ベース車：ハイエース スーパーGL（ガソリン／ディーゼル・標準／ワイド 選択可）</li>
+        <li>初度登録1年以内、走行距離1,000km以内</li>
+        <li>追加オプション（エアコン、ヒーター等）選択可能</li>
+        <li>リース選択の場合は、車検・メンテナンス込みのフルメンテナンスリース</li>
+      </ul>
+    </div>
+    <div class="lineup-cta reveal">
+      <a class="btn-line" href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg> 見積もりについてLINEで問い合わせる</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. お客様の声 ===== -->
+<section class="voice" id="voice">
+  <div class="inner">
+    <span class="sec-label reveal">VOICE</span>
+    <h2 class="sec-title reveal">オーナー様のリアルな声</h2>
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <img src="../images/voice_01.png" data-ph="v1" alt="オーナー様ご家族">
+        <span class="voice-label">OWNER'S VOICE 01</span>
+        <h3>「金曜夜の出発が、家族の恒例行事になりました」</h3>
+        <p>金曜の夜に出て、疲れたらSAで寝る。そんな自由が手に入りました。子供たちも『動く秘密基地』に大興奮！</p>
+        <div class="voice-meta">― 40代男性（会社員・妻＋子ども2人）</div>
+      </div>
+      <div class="voice-card reveal">
+        <img src="../images/voice_02.jpg" data-ph="v2" alt="オーナー様と愛車">
+        <span class="voice-label">OWNER'S VOICE 02</span>
+        <h3>「見た目がかっこいいので、平日の通勤もテンションが上がります」</h3>
+        <p>ミニバンから買い替えて本当に大正解でした。立体駐車場にも入るので、普段の買い物も全く不便がありません。</p>
+        <div class="voice-meta">― 50代男性（自営業・ご夫婦）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. LINE特典 ===== -->
+<section class="offer" id="offer">
+  <div class="inner">
+    <span class="sec-label reveal">LINE限定</span>
+    <h2 class="sec-title reveal">友だち登録で今すぐもらえる<br>「LINE限定 3大特典」</h2>
+    <p class="sec-lead reveal">しつこい営業は一切ありません。まずは情報収集だけでもOKです。</p>
+    <div class="offer-grid">
+      <div class="offer-card reveal">
+        <span class="offer-badge">特典 01</span>
+        <div class="offer-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#06C755" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+        </div>
+        <h3>詳細カタログ＆価格表</h3>
+        <p>CamPitのグレードごとの詳細スペック、内装バリエーション、月々のお支払いシミュレーション表を即時お届け！</p>
+      </div>
+      <div class="offer-card reveal">
+        <span class="offer-badge">特典 02</span>
+        <div class="offer-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#06C755" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>CamPit開発ストーリー</h3>
+        <p>どんな想いとこだわりの技術でこの車が作られたのか。開発秘話とユーザー限定裏話を限定公開。</p>
+      </div>
+      <div class="offer-card reveal">
+        <span class="offer-badge">特典 03</span>
+        <div class="offer-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#06C755" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>1to1 チャット無料相談</h3>
+        <p>「自分の駐車場に入る？」「オプションを追加したい！」など、専門スタッフがLINEで疑問に丁寧回答。</p>
+      </div>
+    </div>
+    <div class="offer-cta reveal">
+      <a class="btn-line" href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+        LINEで3大特典を受け取る
+      </a>
+      <p class="offer-cta-note">※ 登録は無料です。不要になったらいつでもブロックできます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. 最終CTA ===== -->
+<section class="final">
+  <img class="final-bg" src="../images/final_bg.jpg" data-ph="final" alt="星空の下のキャンピングカー">
+  <div class="inner">
+    <span class="final-badge reveal">まずは30秒で簡単登録</span>
+    <h2 class="reveal">街乗り、ときどき秘密基地。<br>あなたの新しい旅をここから。</h2>
+    <p class="reveal">LINE登録で「最新カタログ」「月々シミュレーション」「開発ストーリー」を無料プレゼント中！</p>
+    <div class="reveal">
+      <a class="btn-line" href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+        LINEで無料相談・限定資料を受け取る
+      </a>
+    </div>
+    <p class="final-note reveal">試乗予約・お見積りのご相談もLINEからどうぞ</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <div class="logo">
+        <span class="logo-text">ウェルモビリティRV<small>WEL MOBILITY RV</small></span>
+      </div>
+      <p>
+        〒000-0000 ○○県○○市○○ 0-0-0<br>
+        TEL：000-000-0000（受付 10:00〜18:00 / 水曜定休）
+      </p>
+      <div class="footer-sns">
+        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.8" cy="6.2" r="1.3" fill="#fff" stroke="none"/></svg></a>
+        <a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M18.9 2H22l-7.03 8.03L23.2 22h-6.4l-5.02-6.57L6 22H2.9l7.52-8.6L1.6 2H8.16l4.53 5.99L18.9 2zm-1.12 18.1h1.7L7.25 3.8H5.42l12.36 16.3z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.27 3.6-6.27 3.6z"/></svg></a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 WEL MOBILITY RV All Rights Reserved.</div>
+  </div>
+</footer>
+
+<div class="fixed-cta" id="fixedCta">
+  <a class="btn-line" href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+    月々4万円〜乗れる！カタログはLINEで
+  </a>
+</div>
+
+<script>
+// 画像が未設置の間は、仮画像（ファイル名＋推奨サイズ入り）を自動表示します。
+// ../images/ フォルダに下記ファイル名で写真を入れるだけで自動的に差し替わります。
+const PLACEHOLDERS = {
+  logo:  {file:'logo.jpg',            size:'400×100px'},
+  fv:    {file:'fv_main.png',         size:'1920×1280px', label:'メインビジュアル：夕暮れのビーチで%0Aハッチバックを開けてくつろぐ家族'},
+  sol1:  {file:'solution_daily.png',  size:'1200×800px',  label:'富士山が見える街中を走る白いハイエース'},
+  sol2:  {file:'solution_interior.png',size:'1200×800px', label:'ベッドキットを展開した車内'},
+  w1:    {file:'worry_01.webp',       size:'400×400px',   label:'30〜40代パパの悩む表情'},
+  w2:    {file:'worry_02.webp',       size:'400×400px',   label:'30〜40代ママの悩む表情'},
+  w3:    {file:'worry_03.webp',       size:'400×400px',   label:'期待に目を輝かせる表情'},
+  r1:    {file:'reason_01.jpg',       size:'900×600px',   label:'駐車場・街中をスムーズに走行するシーン'},
+  r2:    {file:'reason_02.png',       size:'900×600px',   label:'ベッドキットに家族が横になっている車内'},
+  r3:    {file:'reason_03.jpg',       size:'900×600px',   label:'アースカラーの外観＆ウッド調内装'},
+  brand: {file:'brand_story.jpg',     size:'800×800px',   label:'キャンプ場での家族の団らん'},
+  v1:    {file:'voice_01.png',        size:'900×600px',   label:'オーナー様ご家族の写真'},
+  v2:    {file:'voice_02.jpg',        size:'900×600px',   label:'オーナー様と愛車の写真'},
+  final: {file:'final_bg.jpg',        size:'1920×1080px', label:'星空とキャンピングカー'}
+};
+function phSvg(p){
+  const label = (p.label||'お客様ご提供のお写真が入ります').split('%0A');
+  const lines = label.map((t,i)=>`<text x="600" y="${370+i*46}" font-size="30" fill="#8aa392" text-anchor="middle" font-family="sans-serif">${t}</text>`).join('');
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">`+
+    `<rect width="1200" height="800" fill="#E3E9E2"/>`+
+    `<rect x="20" y="20" width="1160" height="760" fill="none" stroke="#b8c9bc" stroke-width="3" stroke-dasharray="14 10" rx="18"/>`+
+    `<text x="600" y="300" font-size="40" font-weight="bold" fill="#6d8a77" text-anchor="middle" font-family="sans-serif">画像設置予定</text>`+
+    lines+
+    `<text x="600" y="530" font-size="26" fill="#6d8a77" text-anchor="middle" font-family="monospace">../images/${p.file}</text>`+
+    `<text x="600" y="575" font-size="24" fill="#8aa392" text-anchor="middle" font-family="sans-serif">推奨サイズ：${p.size}</text>`+
+    `</svg>`;
+  return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+}
+document.querySelectorAll('img[data-ph]').forEach(img=>{
+  const p = PLACEHOLDERS[img.dataset.ph];
+  if(!p) return;
+  const isLogo = img.dataset.ph==='logo';
+  // 拡張子が違っても自動で探す（.jpg → .png → .webp → .jpeg の順に試行）
+  const base = '../images/' + p.file.replace(/\.[^.]+$/,'');
+  const queue = ['.jpg','.png','.webp','.jpeg'].map(e=>base+e)
+    .filter(s=>!img.getAttribute('src').endsWith(s));
+  const fallback = ()=>{
+    if(queue.length){ img.src = queue.shift(); }
+    else if(isLogo){ img.style.display='none'; }
+    else { img.src = phSvg(p); }
+  };
+  const showLogo = ()=>{ img.style.display='block'; img.nextElementSibling.style.display='none'; };
+  img.addEventListener('error',fallback);
+  if(isLogo) img.addEventListener('load',showLogo);
+  // スクリプト読込前に読み込み失敗している場合にも対応
+  if(img.complete){
+    if(img.naturalWidth===0){ fallback(); }
+    else if(isLogo){ showLogo(); }
+  }
+});
+
+// スクロール時のふわっと表示
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target);} });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// ヘッダーの影 & 固定CTAの出し分け（FV表示中とフッターでは隠す）
+const header = document.getElementById('header');
+const fixedCta = document.getElementById('fixedCta');
+const fv = document.querySelector('.fv');
+window.addEventListener('scroll',()=>{
+  header.classList.toggle('is-scrolled', window.scrollY>10);
+  fixedCta.classList.toggle('is-hidden', window.scrollY < fv.offsetHeight*0.6);
+},{passive:true});
+fixedCta.classList.add('is-hidden');
+
+// 見出しフォント切替（サンプル限定・納品時に削除するブロック）
+// URLに ?font=gothic を付けるとゴシック版で開けます
+const btnRound = document.getElementById('fontRound');
+const btnGothic = document.getElementById('fontGothic');
+function setFont(gothic){
+  document.body.classList.toggle('font-gothic', gothic);
+  btnRound.classList.toggle('is-active', !gothic);
+  btnGothic.classList.toggle('is-active', gothic);
+}
+btnRound.addEventListener('click',()=>setFont(false));
+btnGothic.addEventListener('click',()=>setFont(true));
+if(new URLSearchParams(location.search).get('font')==='gothic') setFont(true);
+</script>
+</body>
+</html>
