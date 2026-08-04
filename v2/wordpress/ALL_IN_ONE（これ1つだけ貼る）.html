@@ -302,6 +302,10 @@ body{overflow-x:hidden}
   .wmrv-lp .fv{min-height:86vh;padding:90px 0 76px}
 }
 
+/* ===== セクションラベル（HONNE等）の装飾：左右にアンバーの短い線 ===== */
+.wmrv-lp .sec-label{display:flex;align-items:center;justify-content:center;gap:14px}
+.wmrv-lp .sec-label::before,.wmrv-lp .sec-label::after{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+
 </style>
 <div class="wmrv-lp">
 <section class="fv" id="top">
