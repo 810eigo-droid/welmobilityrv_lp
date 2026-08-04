@@ -306,6 +306,17 @@ body{overflow-x:hidden}
 .wmrv-lp .sec-label{display:flex;align-items:center;justify-content:center;gap:14px}
 .wmrv-lp .sec-label::before,.wmrv-lp .sec-label::after{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
 
+/* ===== このページ専用：下部の白い隙間対策 ===== */
+/* 空のサイドバーが下に回り込むのを防ぐ（2カラム設定対策） */
+.l-sidebar,#sidebar,.p-sideBar{display:none!important}
+.l-main,.l-mainContent{width:100%!important;max-width:none!important;margin-bottom:0!important;padding-bottom:0!important}
+/* 記事エリア下の余白・最低高さを除去 */
+article,.post_content{margin-bottom:0!important;padding-bottom:0!important}
+.post_content>*:last-child{margin-bottom:0!important}
+.l-content{min-height:0!important}
+/* フッター直前の余白を除去 */
+.l-footer{margin-top:0!important}
+
 </style>
 <div class="wmrv-lp">
 <section class="fv" id="top">
