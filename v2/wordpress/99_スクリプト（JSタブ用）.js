@@ -1,4 +1,5 @@
 (function(){
+  document.head.insertAdjacentHTML('beforeend','<style>.wmrv-js .wmrv-lp .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}</style>');
   document.body.classList.add('wmrv-js');
   var els = document.querySelectorAll('.wmrv-lp .reveal');
   if ('IntersectionObserver' in window) {
