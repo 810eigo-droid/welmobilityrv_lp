@@ -245,6 +245,9 @@ body{overflow-x:hidden}
 .wmrv-lp .lineup{background:var(--white)}
 .wmrv-lp .lineup-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:40px}
 .wmrv-lp .lineup-card{background:var(--bg);border:1px solid rgba(27,67,50,.10);border-radius:var(--radius);padding:34px 28px 30px;display:flex;flex-direction:column;gap:18px}
+.wmrv-lp .lineup-card{overflow:hidden}
+.wmrv-lp .lineup-card img{width:calc(100% + 56px);max-width:none;margin:-34px -28px 0;aspect-ratio:3/2;object-fit:cover}
+@media(max-width:820px){.wmrv-lp .lineup-card img{width:calc(100% + 56px)}}
 .wmrv-lp .lineup-card h3{font-family:var(--font-round);font-size:22px;font-weight:900;color:var(--green-900);text-align:center;line-height:1.4}
 .wmrv-lp .lineup-feats{list-style:none;border-top:1px dashed rgba(27,67,50,.20);border-bottom:1px dashed rgba(27,67,50,.20);padding:14px 2px;display:flex;flex-direction:column;gap:6px}
 .wmrv-lp .lineup-feats li{position:relative;padding-left:20px;font-size:14px;font-weight:700;color:var(--ink)}
@@ -477,6 +480,7 @@ article,.post_content{margin-bottom:0!important;padding-bottom:0!important}
     <h2 class="sec-title reveal">ウェルモビリティRV ラインナップ</h2>
     <div class="lineup-grid">
       <div class="lineup-card reveal">
+        <img src="https://welmobilityrv.com/wp-content/uploads/campitone.webp" alt="CamPit One">
         <h3>CamPit One</h3>
         <ul class="lineup-feats"><li>フルフラットシート</li><li>ベッドキット</li></ul>
         <div class="lineup-price">
@@ -486,6 +490,7 @@ article,.post_content{margin-bottom:0!important;padding-bottom:0!important}
         </div>
       </div>
       <div class="lineup-card reveal">
+        <img src="https://welmobilityrv.com/wp-content/uploads/campitoneroomy.webp" alt="CamPit Roomy">
         <h3>CamPit Roomy</h3>
         <ul class="lineup-feats"><li>フルフラットシート</li><li>2段ベッドキット</li></ul>
         <div class="lineup-price">
@@ -495,6 +500,7 @@ article,.post_content{margin-bottom:0!important;padding-bottom:0!important}
         </div>
       </div>
       <div class="lineup-card reveal">
+        <img src="https://welmobilityrv.com/wp-content/uploads/campitonedelux.webp" alt="CamPit Delux">
         <h3>CamPit Delux</h3>
         <ul class="lineup-feats"><li>フルフラットシート</li><li>ベッドキット</li><li>ポータブル給排水システム</li></ul>
         <div class="lineup-price">
@@ -611,7 +617,7 @@ article,.post_content{margin-bottom:0!important;padding-bottom:0!important}
 <script>
 function wmrvInit(){
 
-  document.head.insertAdjacentHTML('beforeend','<style>.wmrv-js .wmrv-lp .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}</style>');
+  document.head.insertAdjacentHTML('beforeend','<style>.wmrv-js .wmrv-lp .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.wmrv-js .wmrv-lp .reveal.is-visible{opacity:1;transform:none}</style>');
   document.body.classList.add('wmrv-js');
   var els = document.querySelectorAll('.wmrv-lp .reveal');
   if ('IntersectionObserver' in window) {
