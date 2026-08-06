@@ -323,3 +323,12 @@ article,.post_content{margin-bottom:0!important;padding-bottom:0!important}
 .wmrv-lp.wmrv-lp .lineup-card h3 span{display:block!important;visibility:visible!important;opacity:1!important;text-indent:0!important;font-size:inherit;overflow:visible!important;height:auto!important;width:auto!important;clip:auto!important}
 .wmrv-lp.wmrv-lp .lineup-card h3 .lu-name{font-size:23px!important;font-weight:900!important;color:var(--green-900)!important;line-height:1.3!important}
 .wmrv-lp.wmrv-lp .lineup-card h3 .lu-kana{font-size:12.5px!important;font-weight:700!important;color:var(--ink-soft)!important;letter-spacing:.12em!important;margin-top:5px!important}
+
+/* 経済メリット：宿泊コスト比較グラフ */
+.wmrv-lp .merit .sim{margin-top:0;padding:34px 32px}
+.wmrv-lp .sim-zero{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.wmrv-lp .sim-zero .arrow{font-size:21px;color:var(--green-500);line-height:1}
+.wmrv-lp .sim-zero .zero-num{font-family:var(--font-round);font-size:36px;font-weight:900;color:var(--green-500);line-height:1}
+.wmrv-lp .sim-zero .zero-cap{font-size:12px;font-weight:700;color:var(--ink-soft)}
+@media(max-width:600px){.wmrv-lp .merit .sim{padding:26px 20px}.wmrv-lp .sim-zero .zero-num{font-size:30px}}
+.wmrv-lp .sol-text p + p{margin-top:13px}
