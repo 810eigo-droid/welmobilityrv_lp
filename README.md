@@ -1,4 +1,34 @@
-# ウェルモビリティRV｜LP風トップページ（サンプル）
+# ウェルモビリティRV｜LP制作リポジトリ
+
+キャンピングカー「CamPit」（ウェルモビリティRV）のランディングページ制作データ一式です。
+
+## 🔗 リンク集（各LPへのGitリンク）
+
+| LP | フォルダ | 本番用 | サンプル版（透かし入り） | 画像一覧・説明 |
+|---|---|---|---|---|
+| **LP1**（機能訴求型）｜街乗り、ときどき秘密基地。 | [lp1/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp1) | [index.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/index.html) | [indexw.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw.html) | [README](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/README.md) |
+| **LP2**（月々4万円台強調型）｜定額リース訴求 | [lp2/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp2) | [index.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index.html) | [indexw.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw.html) | [README](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/README.md) |
+
+### ブラウザでの表示確認（コードではなくページとして見る場合）
+
+GitHub上のリンクはコード表示になるため、実際の見た目を確認する場合は下記のプレビュー用リンクをお使いください。
+
+- LP1 サンプル版プレビュー: https://htmlpreview.github.io/?https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw.html
+- LP2 サンプル版プレビュー: https://htmlpreview.github.io/?https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw.html
+
+※ プレビューは簡易表示のため、画像・フォントが一部表示されないことがあります。正確な表示確認は、フォルダごとダウンロードして `index.html` をブラウザで開くか、サーバーにアップしてご確認ください。
+
+### その他のデータ
+
+| データ | 場所 | 内容 |
+|---|---|---|
+| 初期サンプルLP | [index.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/index.html)（リポジトリ直下） | ストーリー型LP（下記「LP風トップページ」の説明参照） |
+| WordPress移植用パーツ | [wordpress/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/wordpress) | セクション別HTML＋共通CSS |
+| 法務ページ雛形 | [v2/legal/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/v2/legal) | プライバシーポリシー等 |
+
+---
+
+# LP風トップページ（サンプル）
 
 SNS広告・Web広告の着地ページとして「共感 → ソリューション → 信頼 → 顧客の声 → LINE特典」へ誘導する、ストーリー型の1ページ構成です。
 
