@@ -9,6 +9,22 @@
 | **LP1**（機能訴求型）｜街乗り、ときどき秘密基地。 | [lp1/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp1) | [index.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/index.html) | [indexw.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw.html) | [README](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/README.md) |
 | **LP2**（月々4万円台強調型）｜定額リース訴求 | [lp2/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp2) | [index.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index.html) | [indexw.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw.html) | [README](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/README.md) |
 
+### コピペ用URL一覧（フルURL）
+
+```
+■ LP1（機能訴求型）
+フォルダ        https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp1
+本番用          https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/index.html
+サンプル版      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw.html
+説明・画像一覧  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/README.md
+
+■ LP2（月々4万円台強調型）
+フォルダ        https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp2
+本番用          https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index.html
+サンプル版      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw.html
+説明・画像一覧  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/README.md
+```
+
 ### ブラウザでの表示確認（コードではなくページとして見る場合）
 
 GitHub上のリンクはコード表示になるため、実際の見た目を確認する場合は下記のプレビュー用リンクをお使いください。
