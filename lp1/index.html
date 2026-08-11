@@ -86,6 +86,7 @@ section{padding:92px 0}
 .fv h1 .accent{color:#FFC85C}
 .fv-product{margin-top:18px;display:flex;align-items:center;gap:.6em;flex-wrap:wrap;text-shadow:0 2px 16px rgba(0,0,0,.5)}
 .fv-product .lead{font-size:clamp(15px,1.9vw,20px);font-weight:700;letter-spacing:.02em}
+.fv-logo{display:none;height:clamp(56px,7.6vw,94px);width:auto;filter:drop-shadow(0 3px 14px rgba(0,0,0,.45))}
 .fv-product b{font-size:clamp(34px,4.8vw,52px);font-weight:900;line-height:1.05;letter-spacing:.03em;padding-bottom:5px;border-bottom:4px solid var(--accent)}
 .fv-lead{margin-top:20px;font-size:clamp(14.5px,1.7vw,17px);font-weight:500;max-width:600px;text-shadow:0 1px 12px rgba(0,0,0,.5)}
 .fv-feats{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
@@ -107,6 +108,7 @@ section{padding:92px 0}
   .fv-feat em{font-size:15px}
   .fv-product{gap:.35em;margin-top:14px}
   .fv-product b{font-size:clamp(26px,9vw,34px);border-bottom-width:3px}
+  .fv-logo{height:clamp(46px,15vw,64px)}
 }
 
 /* ---------- 共感 ---------- */
@@ -291,7 +293,7 @@ section{padding:92px 0}
   <div class="fv-inner">
     <span class="fv-tag reveal">＼ 普段使いも、週末の冒険も ／</span>
     <h1 class="reveal">街乗り、<br>ときどき<span class="accent">秘密基地。</span></h1>
-    <p class="fv-product reveal"><span class="lead">理想を叶えるマルチモビリティ</span><b>CamPit</b></p>
+    <p class="fv-product reveal"><span class="lead">理想を叶えるマルチモビリティ</span><img class="fv-logo" src="images/campit_logo.webp" alt="CamPit"><b>CamPit</b></p>
     <p class="fv-lead reveal">平日は買い物や仕事、家族の送迎を快適にこなす「5人乗り乗用車」。<br>週末はシートを倒すだけで、一瞬で家族だけの「快適な車中泊空間」へ。</p>
     <div class="fv-feats reveal">
       <span class="fv-feat"><b>FEATURE 01</b><em>3人掛け</em>フルフラットベンチシート</span>
@@ -684,6 +686,14 @@ Array.prototype.forEach.call(document.querySelectorAll('img[data-ph]'), function
   if(isLogo) img.addEventListener('load', okLogo);
   if(img.complete){ if(img.naturalWidth === 0){ fail(); } else if(isLogo){ okLogo(); } }
 });
+
+/* ---- FVロゴ：画像があればロゴ、無ければテキスト表示 ---- */
+var fvLogo = document.querySelector(".fv-logo"), fvText = document.querySelector(".fv-product b");
+if(fvLogo){
+  var useLogo = function(){ fvLogo.style.display="block"; fvText.style.display="none"; };
+  fvLogo.addEventListener("load", useLogo);
+  if(fvLogo.complete && fvLogo.naturalWidth > 0) useLogo();
+}
 
 /* ---- スクロールでふわっと表示 ---- */
 if('IntersectionObserver' in window){
