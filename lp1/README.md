@@ -37,6 +37,9 @@ SNS・Web広告の着地ページとして、**出口をLINE登録の一点に�
 | `campitone.webp` | 1536×1024px | ラインナップ：CamPit ONE ロゴ |
 | `campitoneroomy.webp` | 1536×1024px | ラインナップ：CamPit ROOMY ロゴ |
 | `campitonedelux.webp` | 1536×1024px | ラインナップ：CamPit DELUX ロゴ |
+| `tokuten1.webp` | 400×400px（正方形・背景透過） | LINE特典01のアイコン（デジタルカタログ）※未設置なら線画アイコンを表示 |
+| `tokuten2.webp` | 400×400px（正方形・背景透過） | LINE特典02のアイコン（開発ストーリー） |
+| `tokuten3.webp` | 400×400px（正方形・背景透過） | LINE特典03のアイコン（1to1チャット相談） |
 | `cta_bg.webp` | 1920×1080px | ボトムCTA背景：夜のキャンプ場に停まるCamPit（暗めの写真が映えます） |
 
 ### 撮影・作成時のポイント
