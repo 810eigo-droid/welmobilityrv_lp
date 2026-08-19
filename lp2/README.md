@@ -18,6 +18,8 @@ SNS・Web広告の着地ページとして、**出口をLINE登録の一点に�
 |---|---|
 | `index.html` | **完成版**（透かしなし）。本番公開・納品用 |
 | `indexw.html` | **サンプル版**（SAMPLE／TAF-Design の透かし入り）。提案・確認用。検索避け（noindex）設定済み |
+| `index_zenkoku.html` | **全国対応版・完成版**。index.html に「全国販売・納車＋地元整備」の訴求を追加した差し替え候補（FVバッジ／POINT 05新設／STEP05の納車文言／FAQ回答強化）。元に戻す場合は index.html をお使いください |
+| `indexw_zenkoku.html` | **全国対応版・サンプル版**（透かし入り）。index_zenkoku.html の確認用 |
 
 ※ 本文の修正が入った際は、両方のファイルに反映します。
 
