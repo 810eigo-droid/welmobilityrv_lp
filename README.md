@@ -8,6 +8,8 @@
 |---|---|---|---|---|
 | **LP1**（機能訴求型）｜街乗り、ときどき秘密基地。 | [lp1/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp1) | [index.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/index.html) | [indexw.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw.html) | [README](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/README.md) |
 | **LP2**（月々4万円台強調型）｜定額リース訴求 | [lp2/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp2) | [index.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index.html) | [indexw.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw.html) | [README](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/README.md) |
+| **LP1 全国対応版**（全国販売・陸送納車の訴求入り） | [lp1/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp1) | [index_zenkoku.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/index_zenkoku.html) | [indexw_zenkoku.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw_zenkoku.html) | 同上 |
+| **LP2 全国対応版**（全国販売・納車＋地元整備＝POINT 05入り） | [lp2/](https://github.com/810eigo-droid/welmobilityrv_lp/tree/main/lp2) | [index_zenkoku.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index_zenkoku.html) | [indexw_zenkoku.html](https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw_zenkoku.html) | 同上 |
 
 ### コピペ用URL一覧（フルURL）
 
@@ -23,6 +25,12 @@
 本番用          https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index.html
 サンプル版      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw.html
 説明・画像一覧  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/README.md
+
+■ 全国対応版（元ファイルは残したままの差し替え候補）
+LP1 本番用      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/index_zenkoku.html
+LP1 サンプル版  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw_zenkoku.html
+LP2 本番用      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index_zenkoku.html
+LP2 サンプル版  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw_zenkoku.html
 ```
 
 ### ブラウザでの表示確認（コードではなくページとして見る場合）
