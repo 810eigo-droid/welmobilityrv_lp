@@ -568,7 +568,7 @@ section{padding:92px 0}
 
       <div class="plan-card is-popular reveal">
         <span class="plan-pop">一番人気！</span>
-        <img src="images/plan_one.webp" data-ph="p1" alt="CamPit One">
+        <img src="images/plan_one_photo.webp" data-fallback="images/plan_one.webp" data-ph="p1" alt="CamPit One の車内">
         <div class="plan-body">
           <div class="plan-name"><b>CamPit One</b><small>キャンピット ワン</small></div>
           <span class="plan-badge">手軽に始める車中泊スタイリッシュモデル</span>
@@ -583,7 +583,7 @@ section{padding:92px 0}
       </div>
 
       <div class="plan-card reveal">
-        <img src="images/plan_roomy.webp" data-ph="p2" alt="CamPit Roomy">
+        <img src="images/plan_roomy_photo.webp" data-fallback="images/plan_roomy.webp" data-ph="p2" alt="CamPit Roomy 2段ベッド仕様の車内">
         <div class="plan-body">
           <div class="plan-name"><b>CamPit Roomy</b><small>キャンピット ルーミー</small></div>
           <span class="plan-badge">ファミリーに最適！2段ベッド仕様</span>
@@ -598,7 +598,7 @@ section{padding:92px 0}
       </div>
 
       <div class="plan-card reveal">
-        <img src="images/plan_delux.webp" data-ph="p3" alt="CamPit Delux">
+        <img src="images/plan_delux_photo.webp" data-fallback="images/plan_delux.webp" data-ph="p3" alt="CamPit Delux ポータブル給排水システム搭載の車内">
         <div class="plan-body">
           <div class="plan-name"><b>CamPit Delux</b><small>キャンピット デラックス</small></div>
           <span class="plan-badge">快適性を追求した上位モデル</span>
@@ -840,7 +840,11 @@ Array.prototype.forEach.call(document.querySelectorAll('img[data-ph]'), function
   var p = PH[img.getAttribute('data-ph')];
   if(!p) return;
   var isLogo = img.getAttribute('data-ph') === 'logo';
-  var fail = function(){ if(isLogo){ img.style.display='none'; } else { img.src = phSvg(p); } };
+  var fail = function(){
+    var fb = img.getAttribute('data-fallback');
+    if(fb){ img.removeAttribute('data-fallback'); img.src = fb; return; }
+    if(isLogo){ img.style.display='none'; } else { img.src = phSvg(p); }
+  };
   var okLogo = function(){ img.style.display='block'; img.nextElementSibling.style.display='none'; };
   img.addEventListener('error', fail);
   if(isLogo) img.addEventListener('load', okLogo);

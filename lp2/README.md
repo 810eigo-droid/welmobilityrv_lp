@@ -44,6 +44,9 @@ SNS・Web広告の着地ページとして、**出口をLINE登録の一点に�
 | `plan_one.webp` | 1536×1024px | ラインナップ：CamPit One 車両カット（またはロゴ） |
 | `plan_roomy.webp` | 1536×1024px | ラインナップ：CamPit Roomy 車両カット（またはロゴ） |
 | `plan_delux.webp` | 1536×1024px | ラインナップ：CamPit Delux 車両カット（またはロゴ） |
+| `plan_one_photo.webp` | 1200×800px | ラインナップ：CamPit One の実車内写真（**あれば優先表示**、無ければ plan_one.webp を表示） |
+| `plan_roomy_photo.webp` | 1200×800px | ラインナップ：CamPit Roomy 2段ベッドの実車内写真（**あれば優先表示**） |
+| `plan_delux_photo.webp` | 1200×800px | ラインナップ：CamPit Delux 給排水キッチンの実車内写真（**あれば優先表示**） |
 | `voice_01.webp` | 800×600px | オーナー様の声01：40代ファミリーの利用シーン |
 | `voice_02.webp` | 800×600px | オーナー様の声02：50代ご夫婦の利用シーン |
 | `final_bg.webp` | 1920×1080px | 最終CTA背景：夕暮れのキャンプ場に停まるキャンピングカー（暗めの写真が映えます） |
