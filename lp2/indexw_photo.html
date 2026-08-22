@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【SAMPLE】ウェルモビリティRV｜憧れのキャンピングカーが月々4万円台〜。頭金0円・維持費コミコミの定額リース</title>
+<meta name="description" content="「高くて買えない」を覆す、新しいクルマの乗り方。頭金0円・自動車税や車検代もコミコミの定額リースで、憧れのキャンピングカーが月々49,900円（税込）〜。街乗り・立体駐車場OKのハイエースベース。LINE登録で月々シミュレーション＆最新カタログを無料プレゼント。">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="ウェルモビリティRV｜キャンピングカーが月々4万円台〜">
+<meta property="og:description" content="頭金0円・維持費コミコミ。憧れのバンライフが驚くほど身近に。LINE登録で月々シミュレーション＆最新カタログを無料プレゼント中。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/fv_camp.webp">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-950:#0A1C2E;
+  --navy-900:#122E4C;
+  --navy-700:#1D466E;
+  --navy-100:#DCE7F2;
+  --navy-050:#EFF4F9;
+  --green-700:#2D6A4F;
+  --green-500:#40916C;
+  --green-100:#DFF0E4;
+  --green-050:#EEF6EF;
+  --line:#06C755;
+  --line-dark:#05A847;
+  --orange:#EF8200;
+  --orange-dark:#D97400;
+  --gold:#E9B949;
+  --gold-strong:#D19E1C;
+  --gold-deep:#A87D0E;
+  --gold-pale:#FBF3DC;
+  --bg:#F7F8F5;
+  --ink:#22303C;
+  --ink-soft:#5C6B78;
+  --white:#FFFFFF;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(18,46,76,.10);
+  --font:'Noto Sans JP',"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);line-height:1.9;letter-spacing:.03em;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.inner{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:92px 0}
+
+/* ---------- 共通パーツ ---------- */
+.sec-label{display:flex;align-items:center;justify-content:center;gap:14px;text-align:center;font-size:13px;font-weight:700;letter-spacing:.22em;color:var(--gold-deep);margin-bottom:10px}
+.sec-label::before,.sec-label::after{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
+.sec-title{text-align:center;font-size:clamp(24px,3.4vw,36px);font-weight:900;color:var(--navy-900);line-height:1.5;margin-bottom:18px}
+.sec-title .gold{color:var(--gold-strong)}
+.sec-lead{text-align:center;font-size:15px;color:var(--ink-soft);max-width:680px;margin:0 auto 54px}
+.btn-line{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--line);color:#fff;font-weight:700;border-radius:999px;
+  padding:12px 26px;font-size:15px;box-shadow:0 6px 18px rgba(6,199,85,.35);
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+.btn-line:hover{transform:translateY(-2px);background:var(--line-dark);box-shadow:0 10px 24px rgba(6,199,85,.45)}
+.btn-line svg{flex-shrink:0}
+.cta-micro{font-size:13.5px;font-weight:700;color:var(--green-700);letter-spacing:.06em}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.is-visible{opacity:1;transform:none}
+.no-js .reveal{opacity:1;transform:none}
+
+/* ---------- ヘッダー（LP専用・ナビなし） ---------- */
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,248,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(18,46,76,.08);transition:box-shadow .3s}
+.header.is-scrolled{box-shadow:0 4px 20px rgba(18,46,76,.08)}
+.header-inner{max-width:1180px;margin:0 auto;padding:11px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy-900)}
+.logo img{height:38px;width:auto}
+.logo-text{font-size:20px;line-height:1.2;letter-spacing:.04em}
+.logo-text small{display:block;font-size:10px;font-weight:700;color:var(--green-500);letter-spacing:.18em}
+.header .btn-line{padding:10px 20px;font-size:13px;background:var(--orange);box-shadow:0 6px 18px rgba(239,130,0,.35)}
+.header .btn-line:hover{background:var(--orange-dark);box-shadow:0 10px 24px rgba(239,130,0,.45)}
+@media(max-width:600px){
+  .header .btn-line{padding:9px 14px;font-size:11.5px}
+  .logo-text{font-size:17px}
+  .logo img{height:32px}
+}
+
+/* ---------- グローバルナビ ---------- */
+.gnav{display:flex;align-items:center;gap:20px;font-size:13.5px;font-weight:700;color:var(--navy-900);white-space:nowrap}
+.gnav a{transition:color .2s}
+.gnav a:hover{color:var(--gold-strong)}
+.header-actions{display:flex;align-items:center;gap:8px}
+.menu-btn{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;border:0;background:none;cursor:pointer;flex-shrink:0}
+.menu-btn span{display:block;width:22px;height:2.5px;background:var(--navy-900);border-radius:2px;transition:transform .25s,opacity .25s}
+.menu-btn.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.menu-btn.is-open span:nth-child(2){opacity:0}
+.menu-btn.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media(max-width:1023px){
+  .gnav{position:absolute;top:100%;left:0;right:0;background:rgba(247,248,245,.98);backdrop-filter:blur(8px);flex-direction:column;align-items:stretch;gap:0;padding:6px 0 10px;border-bottom:1px solid rgba(18,46,76,.08);box-shadow:0 14px 26px rgba(18,46,76,.14);opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .25s,transform .25s}
+  .gnav.is-open{opacity:1;transform:none;pointer-events:auto}
+  .gnav a{padding:12px 26px;font-size:14px}
+  .menu-btn{display:flex}
+}
+
+/* ---------- FV ---------- */
+.fv{position:relative;min-height:96vh;display:flex;align-items:center;padding:130px 0 96px;overflow:hidden;color:#fff;isolation:isolate}
+.fv-bg{position:absolute;inset:0;z-index:-2}
+.fv-bg img{position:absolute;top:0;width:50%;height:100%;object-fit:cover}
+.fv-bg img:first-child{left:0}
+.fv-bg img:last-child{right:0}
+.fv::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(16,26,38,.38) 0%,rgba(16,26,38,.34) 50%,rgba(16,26,38,.38) 100%)}
+.fv-inner{max-width:1180px;margin:0 auto;padding:0 24px;width:100%;text-align:center}
+.fv-tag{display:inline-block;background:var(--green-700);color:#fff;font-size:13px;font-weight:700;letter-spacing:.08em;padding:6px 20px;border-radius:999px;margin-bottom:22px}
+.fv h1{font-size:clamp(23px,3.9vw,42px);font-weight:900;line-height:1.45;text-shadow:0 2px 8px rgba(0,0,0,.55),0 4px 30px rgba(0,0,0,.5)}
+.fv h1 .price{color:var(--gold);font-size:1.18em;letter-spacing:.01em}
+.fv-price-img{display:none;height:9.3em;width:auto;max-width:98%;vertical-align:middle;margin:-.1em 0 0}
+.fv-sub{margin-top:14px;font-size:clamp(16px,2.2vw,23px);font-weight:900;line-height:1.7;text-shadow:0 2px 8px rgba(0,0,0,.6),0 2px 20px rgba(0,0,0,.5)}
+.fv-lead{margin-top:16px;font-size:clamp(14px,1.7vw,16.5px);font-weight:500;text-shadow:0 1px 6px rgba(0,0,0,.6),0 1px 16px rgba(0,0,0,.5)}
+.fv-lead b{color:var(--gold)}
+.fv-badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px}
+.fv-badge{display:flex;align-items:center;gap:7px;line-height:1.4;text-shadow:0 1px 4px rgba(0,0,0,.5);background:rgba(10,28,46,.38);border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(4px);border-radius:999px;padding:9px 18px;font-size:13.5px;font-weight:700}
+.fv-badge::before{content:"✓";flex-shrink:0;width:18px;height:18px;border-radius:50%;background:var(--gold);color:var(--navy-950);font-size:11px;font-weight:900;text-align:center;line-height:18px}
+.fv-badge em{font-style:normal;color:var(--gold);font-weight:900}
+.fv-cta{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:11px}
+.fv-cta .cta-micro{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.fv-cta .btn-line{font-size:16.5px;padding:18px 38px;text-align:center;line-height:1.5}
+.fv-cta-note{font-size:12.5px;opacity:.92;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.fv-scroll{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.3em;opacity:.8;text-align:center}
+.fv-scroll::after{content:"";display:block;width:1px;height:36px;margin:8px auto 0;background:linear-gradient(#fff,transparent);animation:scrollline 1.8s ease-in-out infinite}
+@keyframes scrollline{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(max-width:600px){
+  .fv{min-height:90vh;padding:104px 0 78px}
+  .fv-bg img{width:100%;height:50%}
+  .fv-bg img:first-child{top:0;object-position:30% 58%}
+  .fv-bg img:last-child{top:auto;bottom:0;right:0;object-position:70% 55%}
+  .fv-price-img{height:auto;width:calc(100% + 20px);max-width:none;margin:.1em -10px 0}
+  .fv-badges{gap:8px}
+  .fv-badge{font-size:12px;padding:7px 13px}
+  .fv-cta{align-items:stretch}
+  .fv-cta .btn-line{font-size:14px;padding:15px 16px}
+}
+
+/* ---------- 悩み・共感 ---------- */
+.worry{background:var(--white)}
+.worry-list{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:0 auto}
+.worry-item{background:var(--bg);border:1px solid rgba(18,46,76,.09);border-radius:var(--radius);padding:26px 28px}
+.worry-item h3{position:relative;padding-left:34px;font-size:16px;font-weight:900;color:var(--navy-900);line-height:1.6;margin-bottom:8px}
+.worry-item h3::before{content:"?";position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:50%;background:var(--gold-pale);color:var(--gold-deep);font-size:14px;font-weight:900;text-align:center;line-height:24px}
+.worry-item p{font-size:13.5px;color:var(--ink-soft)}
+.worry-close{margin-top:46px;text-align:center}
+.worry-arrow{font-size:26px;color:var(--green-500);line-height:1;margin-bottom:10px}
+.worry-close p{font-size:clamp(17px,2.6vw,24px);font-weight:900;color:var(--navy-900);line-height:1.8}
+.worry-close .em{background:linear-gradient(transparent 62%,#F3DFA0 62%);padding:0 2px}
+@media(max-width:820px){.worry-list{grid-template-columns:1fr;max-width:560px}}
+
+/* ---------- ▼つなぎ（セクション間の流れ） ---------- */
+.flow-bridge{margin-top:46px;text-align:center}
+.flow-bridge .fb-arrow{font-size:26px;color:var(--green-500);line-height:1;margin-bottom:10px}
+.flow-bridge p{font-size:clamp(16px,2.4vw,22px);font-weight:900;color:var(--navy-900);line-height:1.8}
+.flow-bridge .em{background:linear-gradient(transparent 62%,#F3DFA0 62%);padding:0 2px}
+
+/* ---------- 選ばれる4つの理由 ---------- */
+.reason{background:linear-gradient(180deg,var(--bg) 0%,var(--navy-050) 100%)}
+.reason-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.reason-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px 30px;position:relative;overflow:hidden}
+.reason-card.is-wide{grid-column:1/-1}
+.reason-no{display:inline-flex;align-items:baseline;gap:6px;font-weight:900;color:var(--gold-strong);font-size:13px;letter-spacing:.18em;margin-bottom:12px}
+.reason-no b{font-size:30px;line-height:1;color:var(--navy-900)}
+.reason-card h3{font-size:clamp(17px,2.2vw,21px);font-weight:900;color:var(--navy-900);line-height:1.6;margin-bottom:12px}
+.reason-card h3 .kw{background:linear-gradient(transparent 60%,#F3DFA0 60%);padding:0 2px}
+.reason-card p{font-size:14px;color:var(--ink-soft)}
+.reason-card .icon{position:absolute;top:26px;right:26px;width:52px;height:52px;border-radius:14px;background:var(--navy-050);display:flex;align-items:center;justify-content:center}
+.reason-ba{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;margin-top:26px}
+.ba-card{background:var(--bg);border:1px solid rgba(18,46,76,.08);border-radius:14px;overflow:hidden}
+.ba-card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.ba-card .cap{padding:14px 18px 18px;text-align:center}
+.ba-card .cap b{display:block;font-size:14.5px;font-weight:900;color:var(--navy-900);margin-bottom:3px}
+.ba-card .cap p{font-size:12.5px;color:var(--ink-soft)}
+.ba-mark{font-size:26px;font-weight:900;color:var(--green-500);text-align:center}
+@media(max-width:820px){
+  .reason-grid{grid-template-columns:1fr}
+  .reason-ba{grid-template-columns:1fr}
+  .ba-mark{transform:rotate(90deg)}
+}
+
+/* ---------- コスト比較 ---------- */
+.compare{background:var(--white)}
+.cmp-sub{display:flex;align-items:center;justify-content:center;gap:10px;font-size:clamp(16px,2.2vw,21px);font-weight:900;color:var(--navy-900);margin:0 0 26px;line-height:1.6;text-align:center}
+.cmp-sub .num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--navy-900);color:#fff;font-size:15px;font-weight:900;text-align:center;line-height:32px}
+.cmp-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:14px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.cmp-table{width:100%;min-width:640px;border-collapse:separate;border-spacing:0;background:var(--white);font-size:14px;line-height:1.7}
+.cmp-table th,.cmp-table td{padding:16px 18px;border-bottom:1px solid rgba(18,46,76,.09);text-align:center;vertical-align:middle}
+.cmp-table thead th{font-size:14.5px;font-weight:900;color:#fff;background:var(--ink-soft);padding:14px 18px}
+.cmp-table thead th:first-child{background:var(--navy-950);border-radius:var(--radius) 0 0 0;width:24%}
+.cmp-table thead th.is-lease{background:var(--green-700);border-radius:0 var(--radius) 0 0;font-size:15px}
+.cmp-table tbody th{background:var(--navy-050);font-weight:900;color:var(--navy-900);font-size:13.5px}
+.cmp-table td.is-loan{color:var(--ink-soft)}
+.cmp-table td.is-lease{background:var(--gold-pale);font-weight:900;color:var(--navy-900)}
+.cmp-table td.is-lease .big{color:var(--gold-deep);font-size:18px}
+.cmp-table tbody tr:last-child th,.cmp-table tbody tr:last-child td{border-bottom:0}
+.cmp-note{font-size:12.5px;color:var(--ink-soft);text-align:center;margin-bottom:64px}
+.trip{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:stretch;max-width:860px;margin:0 auto 26px}
+.trip-card{background:var(--bg);border:1px solid rgba(18,46,76,.10);border-radius:var(--radius);padding:28px 24px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.trip-card.is-win{background:var(--green-050);border:2px solid var(--green-500)}
+.trip-card .t-label{font-size:13.5px;font-weight:900;color:var(--ink-soft);margin-bottom:8px}
+.trip-card.is-win .t-label{color:var(--green-700)}
+.trip-card .t-price{font-size:clamp(22px,3vw,30px);font-weight:900;color:var(--navy-900);line-height:1.3}
+.trip-card.is-win .t-price{color:var(--green-700);font-size:clamp(26px,3.6vw,36px)}
+.trip-card .t-sub{font-size:12.5px;color:var(--ink-soft);margin-top:6px}
+.trip-vs{align-self:center;font-size:18px;font-weight:900;color:var(--gold-strong)}
+.trip-point{max-width:860px;margin:0 auto;background:var(--gold-pale);border:1px solid rgba(209,158,28,.35);border-radius:var(--radius);padding:22px 28px;display:flex;gap:14px;align-items:flex-start}
+.trip-point .bulb{flex-shrink:0;font-size:22px;line-height:1.5}
+.trip-point p{font-size:14px;color:var(--ink)}
+.trip-point b{color:var(--gold-deep)}
+@media(max-width:680px){
+  .trip{grid-template-columns:1fr}
+  .trip-vs{transform:rotate(90deg)}
+}
+
+/* ---------- ラインナップ＆料金 ---------- */
+.price-sec{background:linear-gradient(180deg,var(--navy-050) 0%,var(--bg) 100%)}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.plan-card{background:var(--white);border:1px solid rgba(18,46,76,.10);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;position:relative;box-shadow:var(--shadow)}
+.plan-card.is-popular{border:2px solid var(--gold-strong)}
+.plan-pop{position:absolute;top:14px;left:-38px;transform:rotate(-45deg);background:var(--gold-strong);color:#fff;font-size:11.5px;font-weight:900;letter-spacing:.1em;padding:5px 40px;z-index:2}
+.plan-card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.plan-body{padding:26px 24px 28px;display:flex;flex-direction:column;gap:14px;flex:1}
+.plan-name{text-align:center}
+.plan-name b{display:block;font-size:21px;font-weight:900;color:var(--navy-900);line-height:1.3}
+.plan-name small{display:block;margin-top:3px;font-size:12px;font-weight:700;color:var(--ink-soft);letter-spacing:.1em}
+.plan-badge{align-self:center;background:var(--navy-700);color:#fff;font-size:11.5px;font-weight:700;padding:4px 14px;border-radius:999px;text-align:center;line-height:1.6}
+.plan-price{text-align:center;background:var(--gold-pale);border-radius:14px;padding:16px 12px 13px}
+.plan-price .p-label{display:block;font-size:11.5px;font-weight:700;color:var(--gold-deep);letter-spacing:.1em}
+.plan-price .p-main{display:block;font-weight:900;color:var(--navy-900);line-height:1.2;margin-top:2px}
+.plan-price .p-main em{font-style:normal;font-size:34px;color:var(--gold-deep);letter-spacing:.01em}
+.plan-price .p-main span{font-size:14px}
+.plan-price .p-terms{display:block;font-size:11px;color:var(--ink-soft);margin-top:5px;line-height:1.6}
+.plan-cash{text-align:center;font-size:12px;color:var(--ink-soft)}
+.plan-copy{font-size:13.5px;color:var(--ink-soft);border-top:1px dashed rgba(18,46,76,.2);padding-top:13px;margin-top:auto}
+.plan-note{text-align:center;margin-top:34px;font-size:13px;color:var(--ink-soft)}
+.plan-cta{text-align:center;margin-top:30px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.plan-cta .btn-line{font-size:15.5px;padding:16px 34px;line-height:1.5}
+@media(max-width:900px){.plan-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto}}
+@media(max-width:600px){.plan-cta .btn-line{width:100%;font-size:14px;padding:15px 14px}}
+
+/* ---------- 納車までの流れ ---------- */
+.step{background:var(--white)}
+.step-list{max-width:760px;margin:0 auto;position:relative}
+.step-list::before{content:"";position:absolute;left:25px;top:16px;bottom:16px;width:2px;background:linear-gradient(var(--green-500),var(--navy-100))}
+.step-item{position:relative;padding-left:76px;padding-bottom:32px}
+.step-item:last-child{padding-bottom:0}
+.step-no{position:absolute;left:0;top:0;width:52px;height:52px;border-radius:50%;background:var(--navy-900);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;box-shadow:0 0 0 6px var(--navy-050)}
+.step-no span{font-size:8px;letter-spacing:.1em;opacity:.85}
+.step-no b{font-size:19px;font-weight:900}
+.step-item h3{font-size:17px;font-weight:900;color:var(--navy-900);margin-bottom:5px;padding-top:10px;line-height:1.5}
+.step-item h3 small{font-size:12px;font-weight:700;color:var(--green-500);margin-left:8px}
+.step-item p{font-size:14px;color:var(--ink-soft)}
+@media(max-width:600px){.step-item{padding-left:64px}.step-list::before{left:21px}.step-no{width:44px;height:44px}.step-no b{font-size:17px}}
+
+/* ---------- オーナー様の声 ---------- */
+.voice{background:linear-gradient(180deg,var(--bg) 0%,var(--green-050) 100%)}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:940px;margin:0 auto}
+.voice-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.voice-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.voice-body{padding:26px 28px 28px}
+.voice-tag{display:inline-block;background:var(--navy-050);color:var(--navy-700);font-size:11.5px;font-weight:900;letter-spacing:.12em;padding:4px 12px;border-radius:999px;margin-bottom:10px}
+.voice-body h3{font-size:15px;font-weight:900;color:var(--navy-900);margin-bottom:10px}
+.voice-body p{font-size:14px;color:var(--ink-soft)}
+.voice-body p b{background:linear-gradient(transparent 62%,#F3DFA0 62%);color:var(--ink);padding:0 1px}
+@media(max-width:820px){.voice-grid{grid-template-columns:1fr;max-width:480px}}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--white)}
+.faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.faq-item{background:var(--bg);border:1px solid rgba(18,46,76,.09);border-radius:14px;overflow:hidden}
+.faq-q{width:100%;border:0;background:none;cursor:pointer;font-family:inherit;text-align:left;display:flex;align-items:flex-start;gap:13px;padding:20px 52px 20px 22px;position:relative;font-size:15.5px;font-weight:900;color:var(--navy-900);line-height:1.65}
+.faq-q .mark{flex-shrink:0;width:24px;height:24px;border-radius:6px;background:var(--navy-900);color:#fff;font-size:13px;font-weight:900;text-align:center;line-height:24px}
+.faq-q::after{content:"";position:absolute;right:22px;top:27px;width:11px;height:11px;border-right:2.5px solid var(--green-500);border-bottom:2.5px solid var(--green-500);transform:rotate(45deg);transition:transform .3s}
+.faq-item.is-open .faq-q::after{transform:rotate(-135deg);top:31px}
+.faq-a{display:none;padding:0 22px 22px 57px;font-size:14px;color:var(--ink-soft)}
+.faq-item.is-open .faq-a{display:block}
+.no-js .faq-a{display:block}
+@media(max-width:600px){.faq-q{font-size:14.5px;padding:17px 44px 17px 17px}.faq-a{padding:0 18px 18px 17px;font-size:13.5px}}
+
+/* ---------- LINE特典＋最終CTA ---------- */
+.offer{background:linear-gradient(160deg,#EAF8EE 0%,#DFF3E4 100%);position:relative;overflow:hidden}
+.offer::before{content:"";position:absolute;left:-100px;bottom:-140px;width:380px;height:380px;border-radius:50%;background:rgba(6,199,85,.07)}
+.offer .sec-label{color:var(--line-dark)}
+.offer .sec-label::before,.offer .sec-label::after{background:var(--line)}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.offer-card{background:var(--white);border-radius:var(--radius);padding:34px 26px;text-align:center;box-shadow:0 8px 26px rgba(6,120,60,.10);position:relative}
+.offer-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold-strong);color:#fff;font-size:11px;font-weight:700;padding:4px 16px;border-radius:999px;letter-spacing:.1em;white-space:nowrap}
+.offer-icon{width:78px;height:78px;margin:6px auto 16px;border-radius:50%;background:#E4F8EA;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.offer-icon img{display:none;width:100%;height:100%;object-fit:contain}
+.offer-icon.has-img{background:transparent}
+.offer-card h3{font-size:16.5px;font-weight:900;color:var(--navy-900);margin-bottom:9px;line-height:1.5}
+.offer-card p{font-size:13px;color:var(--ink-soft);text-align:left}
+@media(max-width:820px){.offer-grid{grid-template-columns:1fr;max-width:430px;margin:0 auto}}
+
+.final{position:relative;color:#fff;text-align:center;overflow:hidden;padding:120px 0;isolation:isolate}
+.final-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.final::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,28,46,.66) 0%,rgba(10,28,46,.4) 45%,rgba(10,28,46,.7) 100%)}
+.final-badge{display:inline-block;background:var(--gold-strong);color:#fff;font-size:13px;font-weight:700;padding:6px 20px;border-radius:999px;margin-bottom:22px;letter-spacing:.08em}
+.final h2{font-size:clamp(23px,4vw,40px);font-weight:900;line-height:1.6;margin-bottom:16px;text-shadow:0 2px 10px rgba(0,0,0,.65),0 2px 28px rgba(0,0,0,.5)}
+.final h2 .price{color:var(--gold)}
+.final p{font-size:15px;margin-bottom:32px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.final .btn-line{font-size:17.5px;padding:20px 44px;line-height:1.5}
+.final-note{margin-top:14px;font-size:13px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+@media(max-width:600px){.final{padding:88px 0}.final .btn-line{width:100%;font-size:15px;padding:17px 14px}}
+
+/* ---------- フッター ---------- */
+.footer{background:var(--navy-950);color:rgba(255,255,255,.75);padding:44px 0 118px;font-size:13px;text-align:center}
+.footer .fname{font-size:15px;font-weight:900;color:#fff;margin-bottom:10px}
+.footer p{line-height:2;color:rgba(255,255,255,.6)}
+.footer-links{margin-top:16px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;font-size:12px}
+.footer-links a{color:rgba(255,255,255,.7);border-bottom:1px solid rgba(255,255,255,.2)}
+.footer-links a:hover{color:#fff}
+.copyright{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;color:rgba(255,255,255,.45)}
+
+/* ---------- 上に戻るボタン ---------- */
+.to-top{position:fixed;right:24px;bottom:100px;z-index:199;width:46px;height:46px;border-radius:50%;background:rgba(18,46,76,.82);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(18,46,76,.3);transition:opacity .3s,transform .3s,background .2s}
+.to-top:hover{background:var(--navy-700)}
+.to-top.is-hidden{opacity:0;pointer-events:none;transform:translateY(10px)}
+@media(max-width:820px){.to-top{right:14px;bottom:82px;width:42px;height:42px}}
+
+/* ---------- 固定LINEボタン ---------- */
+.fixed-cta{position:fixed;right:22px;bottom:22px;z-index:200;transition:opacity .3s,transform .3s}
+.fixed-cta .btn-line{padding:16px 28px;font-size:14.5px}
+.fixed-cta.is-hidden{opacity:0;pointer-events:none;transform:translateY(10px)}
+@media(max-width:820px){
+  .fixed-cta{right:0;bottom:0;left:0}
+  .fixed-cta .btn-line{width:100%;border-radius:0;padding:16px;font-size:14.5px;box-shadow:0 -4px 20px rgba(0,0,0,.15)}
+  .footer{padding-bottom:130px}
+}
+
+/* ===== SAMPLE 透かし（納品時はこのブロックごと削除） ===== */
+.wm-tile{position:fixed;inset:0;z-index:9990;pointer-events:none;background-repeat:repeat;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27420%27 height=%27300%27%3E%3Cg transform=%27rotate(-24 210 150)%27%3E%3Ctext x=%27210%27 y=%27142%27 font-family=%27Arial,sans-serif%27 font-size=%2736%27 font-weight=%27bold%27 fill=%27rgba(18,46,76,0.10)%27 text-anchor=%27middle%27%3ESAMPLE%3C/text%3E%3Ctext x=%27210%27 y=%27180%27 font-family=%27Arial,sans-serif%27 font-size=%2722%27 font-weight=%27bold%27 fill=%27rgba(18,46,76,0.10)%27 text-anchor=%27middle%27%3ETAF-Design%3C/text%3E%3C/g%3E%3C/svg%3E")}
+.wm-badge{position:fixed;top:0;left:0;z-index:9991;pointer-events:none;background:rgba(18,46,76,.85);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:6px 14px;border-radius:0 0 12px 0}
+/* ===== /透かし ===== */
+</style>
+</head>
+<body class="no-js">
+
+<!-- ===== SAMPLE表示（納品時に削除） ===== -->
+<div class="wm-tile" aria-hidden="true"></div>
+<div class="wm-badge">SAMPLE ─ TAF-Design</div>
+<!-- ===== /SAMPLE表示 ===== -->
+
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a class="logo" href="#top">
+      <img src="images/logo.webp" data-ph="logo" alt="ウェルモビリティRV" style="display:none">
+      <span class="logo-text">ウェルモビリティRV<small>WEL MOBILITY RV</small></span>
+    </a>
+    <nav class="gnav" id="gnav">
+      <a href="#reason">選ばれる理由</a>
+      <a href="#compare">料金比較</a>
+      <a href="#price">ラインナップ</a>
+      <a href="#flow">納車までの流れ</a>
+      <a href="#voice">オーナーの声</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+    <a class="btn-line" href="#price">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+      無料シミュレーション
+    </a>
+    <button type="button" class="menu-btn" id="menuBtn" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 1. ファーストビュー ===== -->
+<section class="fv" id="top">
+  <div class="fv-bg" aria-hidden="true">
+    <img src="images/fv_city.webp" data-ph="fv1" alt="">
+    <img src="images/fv_camp.webp" data-ph="fv2" alt="">
+  </div>
+  <div class="fv-inner">
+    <span class="fv-tag reveal">＼ 街乗り、ときどき秘密基地。 ／</span>
+    <h1 class="reveal">憧れのキャンピングカーが、<br><img class="fv-price-img" src="images/fv_price.webp" alt="月々4万円台〜！"><span class="price fv-price-text">月々4万円台〜！</span></h1>
+    <p class="fv-sub reveal">「高くて買えない」を覆す、新しいクルマの乗り方。</p>
+    <p class="fv-lead reveal"><b>頭金0円・維持費コミコミ</b>で、憧れのバンライフが驚くほど身近に。</p>
+    <div class="fv-badges reveal">
+      <span class="fv-badge"><em>月々4万円台〜</em>（税込49,900円〜）</span>
+      <span class="fv-badge"><em>頭金0円</em>・初期費用ゼロ</span>
+      <span class="fv-badge">自動車税・車検代<em>コミコミ</em></span>
+      <span class="fv-badge">街乗り・立体駐車場（2.1m）<em>OK</em></span>
+    </div>
+    <div class="fv-cta reveal">
+      <span class="cta-micro">＼ まずは気軽なお見積もりから ／</span>
+      <a class="btn-line" href="https://s.lmes.jp/landing-qr/2010975858-jA3N0Svv?uLand=vJn60q" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+        LINEで30秒！月々シミュレーション＆最新カタログを無料受取
+      </a>
+      <span class="fv-cta-note">※ しつこいお電話や強引な営業は一切ありません。</span>
+    </div>
+  </div>
+  <div class="fv-scroll">SCROLL</div>
+</section>
+
+<!-- ===== 2. 悩み・共感 ===== -->
+<section class="worry">
+  <div class="inner">
+    <span class="sec-label reveal">CHECK</span>
+    <h2 class="sec-title reveal">キャンピングカーに憧れるけど…<br>こんな理由で諦めていませんか？</h2>
+    <div class="worry-list">
+      <div class="worry-item reveal">
+        <h3>本格派は800万〜1,000万円超…高すぎて手が出ない</h3>
+        <p>購入時の初期費用やローン支払いが重く、家族旅行のためにそこまで出費できない。</p>
+      </div>
+      <div class="worry-item reveal">
+        <h3>ハイシーズンのホテル費用高騰＆予約合戦にウンザリ</h3>
+        <p>GWや夏休みの宿代は跳ね上がり、人気の宿はすぐ満室。もっと自由気ままに旅したい。</p>
+      </div>
+      <div class="worry-item reveal">
+        <h3>大きなキャンピングカーは、普段の買い出しや送迎で運転できない</h3>
+        <p>立体駐車場に入らず、街乗り用の普通車と2台持ちするのは維持費がかかりすぎる。</p>
+      </div>
+      <div class="worry-item reveal">
+        <h3>毎年の自動車税や車検代など、突発的な維持費の出費が不安</h3>
+        <p>車を買った後の維持費やメンテナンス代の管理が大変。</p>
+      </div>
+    </div>
+    <div class="worry-close reveal">
+      <div class="worry-arrow">▼</div>
+      <p>そのお悩み、ウェルモビリティRVの<br><span class="em">「月々4万円台〜定額リース」</span>がすべて解決します！</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. 解決策・リースの強み ===== -->
+<section class="reason" id="reason">
+  <div class="inner">
+    <span class="sec-label reveal">REASON</span>
+    <h2 class="sec-title reveal">なぜ<span class="gold">「月々4万円台〜」</span>で<br>キャンピングカーに乗れるのか？</h2>
+    <p class="sec-lead reveal">ウェルモビリティRVが選ばれる4つの理由</p>
+    <div class="reason-grid">
+
+      <div class="reason-card reveal">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D466E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2.5-2.5 2.5-2.5 4.5"/><line x1="12" y1="17" x2="12" y2="17.01"/></svg>
+        </div>
+        <span class="reason-no">POINT <b>01</b></span>
+        <h3><span class="kw">頭金0円</span><br>まとまった初期費用なしで、明日からオーナーに！</h3>
+        <p>大きな手元資金を用意する必要はありません。頭金ゼロでスタートできるため、浮いた資金はご家族のレジャーや体験にそのまま使えます。</p>
+      </div>
+
+      <div class="reason-card reveal">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D466E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M9 15l2 2 4-4"/></svg>
+        </div>
+        <span class="reason-no">POINT <b>02</b></span>
+        <h3><span class="kw">オールインワン定額</span><br>車体代・税金・車検代コミコミで家計管理ラクラク</h3>
+        <p>毎月のお支払いはずっと一定。毎年の自動車税や車検時のまとまった費用が発生しないため、家計のやりくりが非常にシンプルで安心です。</p>
+      </div>
+
+      <div class="reason-card reveal">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D466E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <span class="reason-no">POINT <b>03</b></span>
+        <h3><span class="kw">高残価設定</span><br>ハイエースだから実現できた圧倒的な低月々料金</h3>
+        <p>資産価値（リセールバリュー）が極めて高いトヨタ・ハイエースをベース車両に採用。将来の残価を高価に設定できるからこそ、月々4万円台〜という驚きの定額料金を実現しました。</p>
+      </div>
+
+      <div class="reason-card reveal">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D466E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+        </div>
+        <span class="reason-no">POINT <b>04</b></span>
+        <h3><span class="kw">1台3役</span><br>平日の買い出し・お仕事 ⇄ 週末のフルフラットベッド基地</h3>
+        <p>一般的な立体駐車場（高さ2.1m制限）にも入るサイズ感。さらに、ベッドキットは工具を使わず簡単に取り外しが可能！ 普段のスーパーでの大きな買い物や、仕事の資材運搬など、広々とした大容量の荷台としてもマルチに大活躍します。</p>
+      </div>
+
+      <div class="reason-card is-wide reveal">
+        <span class="reason-no">POINT 04 <b>+α</b></span>
+        <h3>ベッドは<span class="kw">工具不要・数分で脱着</span>。外せば広大な荷台に早変わり</h3>
+        <div class="reason-ba">
+          <div class="ba-card">
+            <img src="images/bed_open_v2.webp" data-ph="bed1" alt="ベッドキットを展開したフルフラットな車内">
+            <div class="cap"><b>週末：フルフラットベッド基地</b><p>大人が足を伸ばせる快適な就寝空間に。</p></div>
+          </div>
+          <div class="ba-mark">⇄</div>
+          <div class="ba-card">
+            <img src="images/bed_cargo_v2.webp" data-ph="bed2" alt="ベッドを外した広大な荷台">
+            <div class="cap"><b>平日：大容量の荷台</b><p>大きな買い物や仕事の資材運搬もラクラク。</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. コスト比較・シミュレーション ===== -->
+<section class="compare" id="compare">
+  <div class="inner">
+    <span class="sec-label reveal">COMPARISON</span>
+    <h2 class="sec-title reveal">購入 vs リース / ホテル旅 vs 車中泊<br><span class="gold">圧倒的なコストパフォーマンス比較</span></h2>
+
+    <h3 class="cmp-sub reveal"><span class="num">1</span>乗車スタイルの比較（一般ローン購入 vs 定額リース）</h3>
+    <div class="cmp-table-wrap reveal">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th>比較項目</th>
+            <th>一般ローン購入</th>
+            <th class="is-lease">ウェルモビリティRV<br>定額リース</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>初期費用（頭金）</th>
+            <td class="is-loan">数十万〜数百万円必要</td>
+            <td class="is-lease"><span class="big">0円</span><br>（完全頭金ナシOK）</td>
+          </tr>
+          <tr>
+            <th>毎月のお支払い</th>
+            <td class="is-loan">7万〜10万円前後（高額）</td>
+            <td class="is-lease">月々 <span class="big">49,900円</span><br>（4万円台〜）</td>
+          </tr>
+          <tr>
+            <th>自動車税・自賠責保険</th>
+            <td class="is-loan">その都度まとまった出費が発生</td>
+            <td class="is-lease">月々のお支払いにコミコミ！</td>
+          </tr>
+          <tr>
+            <th>日常使いやすさ</th>
+            <td class="is-loan">大型キャンパーは普段使い不可</td>
+            <td class="is-lease">ハイエースサイズ＋ベッド脱着で<br>街乗り・仕事・買い物も楽々</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cmp-note reveal">※ 月々料金はCamPit One／72回／ボーナス併用時の一例です。</p>
+
+    <h3 class="cmp-sub reveal"><span class="num">2</span>旅費の節約効果（家族4人・年4回旅行の場合）</h3>
+    <div class="trip reveal">
+      <div class="trip-card">
+        <div class="t-label">ホテル宿泊の場合</div>
+        <div class="t-price">年間 約24万円</div>
+        <div class="t-sub">1泊6万円 × 年4回の宿泊費</div>
+      </div>
+      <div class="trip-vs">VS</div>
+      <div class="trip-card is-win">
+        <div class="t-label">ウェルモビリティRVの場合</div>
+        <div class="t-price">宿泊費 0円！</div>
+        <div class="t-sub">車中泊なら何泊しても宿代いらず</div>
+      </div>
+    </div>
+    <div class="trip-point reveal">
+      <span class="bulb">💡</span>
+      <p><b>ポイント：</b>浮いた宿泊費で、毎月のリース料のかなりの部分を実質カバー！美味しい食事や体験アクティビティを家族で思い切り楽しめます。</p>
+    </div>
+    <div class="flow-bridge reveal">
+      <div class="fb-arrow">▼</div>
+      <p>では、月々いくらから乗れるの？<br>ライフスタイルで選べる<span class="em">3つのプラン</span>をご紹介します！</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. モデルラインナップ＆料金 ===== -->
+<section class="price-sec" id="price">
+  <div class="inner">
+    <span class="sec-label reveal">PRICE &amp; LINE UP</span>
+    <h2 class="sec-title reveal">ライフスタイルで選べる！<br>ウェルモビリティRV ラインナップ</h2>
+    <div class="plan-grid">
+
+      <div class="plan-card is-popular reveal">
+        <span class="plan-pop">一番人気！</span>
+        <img src="images/plan_one_photo.webp" data-fallback="images/plan_one.webp" data-ph="p1" alt="CamPit One の車内">
+        <div class="plan-body">
+          <div class="plan-name"><b>CamPit One</b><small>キャンピット ワン</small></div>
+          <span class="plan-badge">手軽に始める車中泊スタイリッシュモデル</span>
+          <p class="plan-copy" style="border:0;padding:0;margin:0">簡単脱着フルフラットベッドキット搭載。</p>
+          <div class="plan-price">
+            <span class="p-label">リース料金</span>
+            <span class="p-main">月々 <em>49,900</em><span>円（税込）</span></span>
+            <span class="p-terms">× 72回（※別途ボーナス併用 / ガソリン・標準）</span>
+          </div>
+          <p class="plan-cash">（一括購入の場合：5,990,000円 税込）</p>
+        </div>
+      </div>
+
+      <div class="plan-card reveal">
+        <img src="images/plan_roomy_photo.webp" data-fallback="images/plan_roomy.webp" data-ph="p2" alt="CamPit Roomy 2段ベッド仕様の車内">
+        <div class="plan-body">
+          <div class="plan-name"><b>CamPit Roomy</b><small>キャンピット ルーミー</small></div>
+          <span class="plan-badge">ファミリーに最適！2段ベッド仕様</span>
+          <p class="plan-copy" style="border:0;padding:0;margin:0">大人数でも広々の2段ベッド仕様。</p>
+          <div class="plan-price">
+            <span class="p-label">リース料金</span>
+            <span class="p-main">月々 <em>54,800</em><span>円（税込）</span></span>
+            <span class="p-terms">× 72回（※別途ボーナス併用 / ガソリン・標準）</span>
+          </div>
+          <p class="plan-cash">（一括購入の場合：6,490,000円 税込）</p>
+        </div>
+      </div>
+
+      <div class="plan-card reveal">
+        <img src="images/plan_delux_photo.webp" data-fallback="images/plan_delux.webp" data-ph="p3" alt="CamPit Delux ポータブル給排水システム搭載の車内">
+        <div class="plan-body">
+          <div class="plan-name"><b>CamPit Delux</b><small>キャンピット デラックス</small></div>
+          <span class="plan-badge">快適性を追求した上位モデル</span>
+          <p class="plan-copy" style="border:0;padding:0;margin:0">ポータブル給排水システム搭載モデル。</p>
+          <div class="plan-price">
+            <span class="p-label">リース料金</span>
+            <span class="p-main">月々 <em>62,900</em><span>円（税込）</span></span>
+            <span class="p-terms">× 72回（※別途ボーナス併用 / ガソリン・標準）</span>
+          </div>
+          <p class="plan-cash">（一括購入の場合：6,990,000円 税込）</p>
+        </div>
+      </div>
+
+    </div>
+    <p class="plan-note reveal">※頭金ありプラン、ボーナスなし月々完全均等払いプランなど、ご予算に応じた柔軟なシミュレーションが可能です。</p>
+    <div class="plan-cta reveal">
+      <span class="cta-micro">＼ あなたにピッタリの支払いプランを診断 ／</span>
+      <a class="btn-line" href="https://s.lmes.jp/landing-qr/2010975858-jA3N0Svv?uLand=vJn60q" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+        LINEで月々お支払いシミュレーションを受け取る
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. ご納車までの流れ ===== -->
+<section class="step" id="flow">
+  <div class="inner">
+    <span class="sec-label reveal">FLOW</span>
+    <h2 class="sec-title reveal">かんたん5ステップ！<br>ご相談から納車までの流れ</h2>
+    <p class="sec-lead reveal">スマホひとつで完結！納車までスムーズな5ステップです。</p>
+    <div class="step-list">
+      <div class="step-item reveal">
+        <div class="step-no"><span>STEP</span><b>01</b></div>
+        <h3>まずはLINEに登録<small>所要時間30秒</small></h3>
+        <p>まずは公式LINEをお友達追加。「月々シミュレーション」や「デジタルカタログ」をすぐにご覧いただけます。</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-no"><span>STEP</span><b>02</b></div>
+        <h3>チャットや電話で詳細の打ち合わせ</h3>
+        <p>ご希望のプランやオプション、毎月のご予算など、専門スタッフがチャットや電話で丁寧にお伺いします。</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-no"><span>STEP</span><b>03</b></div>
+        <h3>リース審査</h3>
+        <p>オンラインで手軽にリース審査のお申し込みが可能です。結果もスピーディーにご案内いたします。</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-no"><span>STEP</span><b>04</b></div>
+        <h3>ご契約</h3>
+        <p>審査通過後、契約書のお手続きを行います。ご不明点は事前になんでもご相談いただけるので安心です。</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-no"><span>STEP</span><b>05</b></div>
+        <h3>ご納車<small>お申し込みから1〜2か月後</small></h3>
+        <p>お待たせすることなく、最短1〜2か月程度であなただけのキャンピングカーをお届け！いよいよ新しいバンライフのスタートです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. オーナー様の声 ===== -->
+<section class="voice" id="voice">
+  <div class="inner">
+    <span class="sec-label reveal">OWNER'S VOICE</span>
+    <h2 class="sec-title reveal">オーナー様の声</h2>
+    <p class="sec-lead reveal">実際に「月々定額」で新しいバンライフを始めたオーナー様にお話を伺いました。</p>
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <img src="images/voice_01.webp" data-ph="v1" alt="40代ファミリーのオーナー様">
+        <div class="voice-body">
+          <span class="voice-tag">OWNER'S VOICE 01</span>
+          <h3>40代ファミリー</h3>
+          <p>「ホテル代を気にせず、<b>金曜の夜思い立ったらそのまま出発</b>できるように！月々4万円台の定額なので、家計のやりくりも楽で助かっています。」</p>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <img src="images/voice_02.webp" data-ph="v2" alt="50代ご夫婦のオーナー様">
+        <div class="voice-body">
+          <span class="voice-tag">OWNER'S VOICE 02</span>
+          <h3>50代ご夫婦</h3>
+          <p>「<b>立体駐車場に入るのが決め手</b>でした。平日は妻が買い物に使い、週末は二人で温泉巡り。一括で買うのは勇気がいりましたが、リースだから即決できました。」</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="inner">
+    <span class="sec-label reveal">FAQ</span>
+    <h2 class="sec-title reveal">よくあるご質問</h2>
+    <p class="sec-lead reveal">リース契約の前によくいただく、不安や疑問にお答えします。</p>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button type="button" class="faq-q"><span class="mark">Q</span>リース期間が終わった後はどうなりますか？</button>
+        <div class="faq-a">「新しいモデルに乗り換え」「契約延長（再リース）」「残価で買い取り」「車両の返却」の4つから自由に選択いただけます。</div>
+      </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-q"><span class="mark">Q</span>月々の支払いを「ボーナスなし均等払い」にできますか？</button>
+        <div class="faq-a">はい、可能です！ボーナス払いの有無や頭金の設定など、ご要望に合わせて最適なプランをご提案いたします。</div>
+      </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-q"><span class="mark">Q</span>オプションの追加や内装カスタムはできますか？</button>
+        <div class="faq-a">FFヒーターやポータブル電源、ソーラーパネルなど、ご希望のオプションを組み込んだリースプランを作成できます。</div>
+      </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-q"><span class="mark">Q</span>途中で家族が増えたり、ライフスタイルが変わっても使い続けられますか？</button>
+        <div class="faq-a">はい、大丈夫です！普段は5人乗りの日常使いや荷物運び用の車として活躍し、週末は家族での車中泊基地に早変わりします。また、工具を使わず数分でベッド脱着ができるため、お子様の習い事の送迎、キャンプ、普段の大きな買い物など、成長やライフスタイルの変化に合わせて柔軟にアレンジしていただけます。</div>
+      </div>
+      <div class="faq-item reveal">
+        <button type="button" class="faq-q"><span class="mark">Q</span>故障やメンテナンスが心配です。手放す際のリセールや原状回復の基準はどうなっていますか？</button>
+        <div class="faq-a">全国展開の提携工場やディーラーで整備・メンテナンスが受けられるため、お近くで安心して維持できます。また、車内を傷つけにくい専用設計パーツを使用しているため、一般的な取り扱いの範囲内であれば返却時の原状回復トラブルの心配もございません。万が一の事故やトラブル時もサポート窓口が対応いたします。</div>
+      </div>
+    </div>
+    <div class="flow-bridge reveal">
+      <div class="fb-arrow">▼</div>
+      <p>疑問が解決したら、まずは<span class="em">LINEで気軽に情報収集</span>から始めませんか？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. LINE特典 ===== -->
+<section class="offer" id="offer">
+  <div class="inner">
+    <span class="sec-label reveal">LINE限定</span>
+    <h2 class="sec-title reveal">LINE登録者限定 3大特典</h2>
+    <p class="sec-lead reveal">友だち登録するだけで、その場ですぐに受け取れます。</p>
+    <div class="offer-grid">
+      <div class="offer-card reveal">
+        <span class="offer-badge">特典 01</span>
+        <div class="offer-icon">
+          <img src="images/tokuten1.webp" alt="">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#06C755" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+        </div>
+        <h3>詳細モデルカタログ<br>＆最新価格表</h3>
+        <p>全モデルの詳細な内装ショットや装備一覧、最新の価格表をまとめたデジタルカタログをお届けします。</p>
+      </div>
+      <div class="offer-card reveal">
+        <span class="offer-badge">特典 02</span>
+        <div class="offer-icon">
+          <img src="images/tokuten2.webp" alt="">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#06C755" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/><line x1="8" y1="18" x2="8" y2="18.01"/><line x1="12" y1="18" x2="12" y2="18.01"/><line x1="16" y1="18" x2="16" y2="18.01"/></svg>
+        </div>
+        <h3>あなたに合わせた<br>「月々お支払いシミュレーション」</h3>
+        <p>頭金の有無やボーナス払いの設定など、ご予算に合わせたあなただけの支払いプランを無料で診断します。</p>
+      </div>
+      <div class="offer-card reveal">
+        <span class="offer-badge">特典 03</span>
+        <div class="offer-icon">
+          <img src="images/tokuten3.webp" alt="">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#06C755" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>専門スタッフによる<br>1対1チャット無料相談</h3>
+        <p>「自宅の駐車場に入る？」「審査は通る？」など、気になる疑問を専門スタッフに直接チャットで相談できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. 最終CTA ===== -->
+<section class="final">
+  <img class="final-bg" src="images/final_bg.webp" data-ph="cta" alt="夕暮れのキャンプ場に停まるキャンピングカーと家族">
+  <div class="inner">
+    <span class="final-badge reveal">登録時間わずか30秒</span>
+    <h2 class="reveal"><span class="price">月々4万円台</span>から始まる、<br>家族の新しい物語。</h2>
+    <p class="reveal">まずは30秒で完了！あなたの理想の支払いプランを<br>LINEで診断してみませんか？</p>
+    <div class="reveal">
+      <a class="btn-line" href="https://s.lmes.jp/landing-qr/2010975858-jA3N0Svv?uLand=vJn60q" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+        LINEで無料シミュレーション＆カタログを受け取る
+      </a>
+    </div>
+    <p class="final-note reveal">※しつこいお電話や強引な営業は一切ございません。不要になったらいつでもブロック可能です。</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="inner">
+    <div class="fname">ウェルモビリティRV（有限会社山下オート商会）</div>
+    <p>
+      〒421-0412 静岡県牧之原市坂部564-6<br>
+      お問い合わせ・お見積りは公式LINEにて承っております<br>
+      全国どこからでもオンライン商談・ご納車が可能です
+    </p>
+    <div class="footer-links">
+      <a href="https://welmobilityrv.com/" target="_blank" rel="noopener">公式サイト</a>
+    </div>
+    <div class="copyright">© 2026 WEL MOBILITY RV All Rights Reserved.</div>
+  </div>
+</footer>
+
+<a class="to-top is-hidden" id="toTop" href="#top" aria-label="ページ上部へ戻る">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</a>
+
+<div class="fixed-cta" id="fixedCta">
+  <a class="btn-line" href="https://s.lmes.jp/landing-qr/2010975858-jA3N0Svv?uLand=vJn60q" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.35 22 11.8 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+    月々シミュレーションはLINEで
+  </a>
+</div>
+
+<script>
+document.body.classList.remove('no-js');
+
+/* ---- 画像が未設置の間は、ファイル名と推奨サイズ入りの仮画像を自動表示 ---- */
+var PH = {
+  logo:{file:'logo.webp',      size:'400×100px'},
+  fv1: {file:'fv_city.webp',   size:'1080×1440px', label:'FV左：街中を走るハイエース'},
+  fv2: {file:'fv_camp.webp',   size:'1080×1440px', label:'FV右：キャンプ場でくつろぐ家族'},
+  bed1:{file:'bed_open_v2.webp',  size:'1200×800px',  label:'ベッドキット展開時（フルフラット）'},
+  bed2:{file:'bed_cargo_v2.webp', size:'1200×800px',  label:'ベッドを外した広大な荷台'},
+  p1:  {file:'plan_one.webp',  size:'1536×1024px', label:'CamPit One 車両カット'},
+  p2:  {file:'plan_roomy.webp',size:'1536×1024px', label:'CamPit Roomy 車両カット'},
+  p3:  {file:'plan_delux.webp',size:'1536×1024px', label:'CamPit Delux 車両カット'},
+  v1:  {file:'voice_01.webp',  size:'800×600px',   label:'オーナー様の声01（40代ファミリー）'},
+  v2:  {file:'voice_02.webp',  size:'800×600px',   label:'オーナー様の声02（50代ご夫婦）'},
+  cta: {file:'final_bg.webp',  size:'1920×1080px', label:'最終CTA背景：夕暮れのキャンプ場のキャンピングカー'}
+};
+function phSvg(p){
+  var t = (p.label || 'お客様ご提供のお写真が入ります');
+  var m = p.size.match(/(\d+)×(\d+)/);
+  var w = m ? +m[1] : 1200, h = m ? +m[2] : 800;
+  var u = Math.min(w, h) / 20;  /* 短辺基準の文字サイズ単位（拡大表示されても文字が巨大化しない） */
+  var cx = w / 2, cy = h / 2;
+  var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h + '">'
+    + '<rect width="' + w + '" height="' + h + '" fill="#E2E7EC"/>'
+    + '<rect x="' + u/2 + '" y="' + u/2 + '" width="' + (w-u) + '" height="' + (h-u) + '" fill="none" stroke="#aebccb" stroke-width="3" stroke-dasharray="14 10" rx="18"/>'
+    + '<text x="' + cx + '" y="' + (cy - u*2.4) + '" font-size="' + u*1.3 + '" font-weight="bold" fill="#5f7891" text-anchor="middle" font-family="sans-serif">画像設置予定</text>'
+    + '<text x="' + cx + '" y="' + (cy - u*0.6) + '" font-size="' + u*0.85 + '" fill="#7f95aa" text-anchor="middle" font-family="sans-serif">' + t + '</text>'
+    + '<text x="' + cx + '" y="' + (cy + u*1.4) + '" font-size="' + u*0.85 + '" fill="#5f7891" text-anchor="middle" font-family="monospace">images/' + p.file + '</text>'
+    + '<text x="' + cx + '" y="' + (cy + u*2.8) + '" font-size="' + u*0.8 + '" fill="#7f95aa" text-anchor="middle" font-family="sans-serif">推奨サイズ：' + p.size + '</text>'
+    + '</svg>';
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+Array.prototype.forEach.call(document.querySelectorAll('img[data-ph]'), function(img){
+  var p = PH[img.getAttribute('data-ph')];
+  if(!p) return;
+  var isLogo = img.getAttribute('data-ph') === 'logo';
+  var fail = function(){
+    var fb = img.getAttribute('data-fallback');
+    if(fb){ img.removeAttribute('data-fallback'); img.src = fb; return; }
+    if(isLogo){ img.style.display='none'; } else { img.src = phSvg(p); }
+  };
+  var okLogo = function(){ img.style.display='block'; img.nextElementSibling.style.display='none'; };
+  img.addEventListener('error', fail);
+  if(isLogo) img.addEventListener('load', okLogo);
+  if(img.complete){ if(img.naturalWidth === 0){ fail(); } else if(isLogo){ okLogo(); } }
+});
+
+/* ---- 特典アイコン：イラスト画像があれば差し替え ---- */
+Array.prototype.forEach.call(document.querySelectorAll(".offer-icon img"), function(im){
+  var use = function(){ im.style.display="block"; im.parentElement.classList.add("has-img"); var sv=im.parentElement.querySelector("svg"); if(sv) sv.style.display="none"; };
+  im.addEventListener("load", use);
+  if(im.complete && im.naturalWidth > 0) use();
+});
+
+/* ---- スクロールでふわっと表示 ---- */
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold:.14 });
+  Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function(el){ io.observe(el); });
+} else {
+  Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function(el){ el.classList.add('is-visible'); });
+}
+
+/* ---- ハンバーガーメニュー ---- */
+var menuBtn = document.getElementById('menuBtn'), gnav = document.getElementById('gnav');
+menuBtn.addEventListener('click', function(){
+  var open = gnav.classList.toggle('is-open');
+  menuBtn.classList.toggle('is-open', open);
+});
+Array.prototype.forEach.call(gnav.querySelectorAll('a'), function(a){
+  a.addEventListener('click', function(){ gnav.classList.remove('is-open'); menuBtn.classList.remove('is-open'); });
+});
+
+/* ---- FVの「月々4万円台」ロゴ画像があれば差し替え（未設置時は文字表示） ---- */
+var priceImg = document.querySelector('.fv-price-img');
+if(priceImg){
+  var usePrice = function(){ priceImg.style.display='inline-block'; var t=document.querySelector('.fv-price-text'); if(t) t.style.display='none'; };
+  priceImg.addEventListener('load', usePrice);
+  if(priceImg.complete && priceImg.naturalWidth > 0) usePrice();
+}
+
+/* ---- FAQ アコーディオン ---- */
+Array.prototype.forEach.call(document.querySelectorAll('.faq-q'), function(q){
+  q.addEventListener('click', function(){ q.parentElement.classList.toggle('is-open'); });
+});
+
+/* ---- ヘッダーの影 & 固定CTAの出し分け ---- */
+var header = document.getElementById('header'), fixedCta = document.getElementById('fixedCta'), toTop = document.getElementById('toTop'), fv = document.querySelector('.fv');
+fixedCta.classList.add('is-hidden');
+window.addEventListener('scroll', function(){
+  header.classList.toggle('is-scrolled', window.scrollY > 10);
+  var below = window.scrollY < fv.offsetHeight * 0.55;
+  fixedCta.classList.toggle('is-hidden', below);
+  toTop.classList.toggle('is-hidden', below);
+}, { passive:true });
+</script>
+</body>
+</html>

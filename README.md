@@ -31,6 +31,12 @@ LP1 本番用      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/l
 LP1 サンプル版  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw_zenkoku.html
 LP2 本番用      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index_zenkoku.html
 LP2 サンプル版  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw_zenkoku.html
+
+■ 新写真版（クライアント支給の新カットを適用した差し替え候補・元ファイルは無変更）
+LP1 本番用      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/index_photo.html
+LP1 サンプル版  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp1/indexw_photo.html
+LP2 本番用      https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/index_photo.html
+LP2 サンプル版  https://github.com/810eigo-droid/welmobilityrv_lp/blob/main/lp2/indexw_photo.html
 ```
 
 ### ブラウザでの表示確認（コードではなくページとして見る場合）

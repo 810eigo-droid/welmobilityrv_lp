@@ -20,6 +20,8 @@ SNS・Web広告の着地ページとして、**出口をLINE登録の一点に�
 | `indexw.html` | **サンプル版**（SAMPLE／TAF-Design の透かし入り）。提案・確認用。検索避け（noindex）設定済み |
 | `index_zenkoku.html` | **全国対応版・完成版**。index.html に「全国販売・納車＋地元整備」の訴求を追加した差し替え候補（FVバッジ／POINT 05新設／STEP05の納車文言／FAQ回答強化）。元に戻す場合は index.html をお使いください |
 | `indexw_zenkoku.html` | **全国対応版・サンプル版**（透かし入り）。index_zenkoku.html の確認用 |
+| `index_photo.html` | **新写真版・完成版**。POINT 04のベッド展開・荷台の2枚を新写真（_v2）に差し替えた版。元の index.html は無変更 |
+| `indexw_photo.html` | **新写真版・サンプル版**（透かし入り） |
 
 ※ 本文の修正が入った際は、両方のファイルに反映します。
 
